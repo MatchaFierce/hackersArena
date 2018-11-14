@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Franco -- back-end lead/DB Designer -- @Franco1010
+    Cesar -- Front-end/Compulsive commenter -- @MatchaFierce
+    Dany -- Full-stack -- @naekkeoya
+
+# THANKS
+
+    @nmicht for her patience and good vibes
+    Technologies with good documentation
+    Therapists
+    The frameworks that we can't use (LUV U Bootstrap)
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
