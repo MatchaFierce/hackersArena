@@ -87,6 +87,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.display-flex {
+  display: flex !important;
+}
+
+.row {
+  flex-direction: row !important;
+}
+
+.al_start {
+  align-items: flex-start;
+}
+
+.jus_around {
+  justify-content: space-around !important;
+}
+
+.w_100 {
+  width: 100% !important;
+}
+
+.footer {
+  text-align: center;
+  color: coral;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

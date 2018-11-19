@@ -16,6 +16,10 @@ html {
     line-height: 1.4;
 }
 
+$primary-color: white;
+$secondary-color: coral;
+$primary-button-color: lightblue;
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -96,6 +100,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   .display-flex {
+     display: flex !important;
+   }
+
+   .row {
+     flex-direction: row !important;
+   }
+
+   .al_start {
+     align-items: flex-start;
+   }
+
+   .jus_around {
+     justify-content: space-around!important;
+   }
+
+   .w_100 {
+     width: 100% !important;
+   }
+
+
+   .footer {
+     text-align: center;
+     color: $secondary-color;
+   }
 
 
 
@@ -201,6 +230,7 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
 }
 
 @media print,
