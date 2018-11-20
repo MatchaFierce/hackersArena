@@ -140,19 +140,53 @@ textarea {
      align-items: center;
      text-decoration: none;
      font-family: Arial;
-     .img {
+     img {
        margin-top: 5px;
      }
-     .a, a:link, a:visited, a:active{
+      a:link, a:visited, a:active{
        color: $navbar-textcolor;
      }
-     .a, a:hover {
+      a:hover {
        color: $navbar-hover-color;
      }
-
    }
 
+   .content {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     align-items: center;
 
+     h1 {
+       margin-left: 20px;
+       text-align: center;
+     }
+   }
+
+   #contenido {
+     justify-content: center;
+     text-align: justify;
+     margin-left: 20px;
+     margin-right: 20px;
+     img, #img1 {
+       margin: 50px auto;
+       display: block;
+     }
+   }
+
+   @media screen and (max-width: 320px) {
+     #inicio, #problems, #leaderboards{
+       display: none;
+     }
+
+
+
+     #contenido {
+       #img1 {
+         display: none;
+       }
+     }
+   }
 
 
 
