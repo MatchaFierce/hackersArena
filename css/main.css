@@ -112,6 +112,26 @@ textarea {
   color: coral;
 }
 
+.navbar {
+  background-color: #101010;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial;
+}
+.navbar .img {
+  margin-top: 5px;
+}
+.navbar .a, .navbar a:link, .navbar a:visited, .navbar a:active {
+  color: #fff;
+}
+.navbar .a, .navbar a:hover {
+  color: #333;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
