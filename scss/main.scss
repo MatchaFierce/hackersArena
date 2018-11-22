@@ -16,6 +16,7 @@ html {
     line-height: 1.4;
 }
 
+$page-color: #efefef;
 $primary-color: white;
 $secondary-color: coral;
 $primary-button-color: lightblue;
@@ -103,98 +104,103 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-    .center {
-      text-align: center;
+  body {
+    background-color: $page-color;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .display_flex {
+   display: flex !important;
+  }
+
+  .row {
+   flex-direction: row !important;
+  }
+
+  .al_start {
+   align-items: flex-start;
+  }
+
+  .jus_around {
+   justify-content: space-around!important;
+  }
+
+  .w_100 {
+    width: 100% !important;
+  }
+
+  .footer {
+   text-align: center;
+   color: $secondary-color;
+  }
+
+  .navbar {
+    background-color: $navbar-color;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial;
+
+    img {
+      margin-top: 5px;
     }
 
-   .display_flex {
-     display: flex !important;
-   }
+    a:link, a:visited, a:active{
+     color: $navbar-textcolor;
+    }
 
-   .row {
-     flex-direction: row !important;
-   }
+    a:hover {
+     color: $navbar-hover-color;
+    }
+  }
 
-   .al_start {
-     align-items: flex-start;
-   }
+  .content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 
-   .jus_around {
-     justify-content: space-around!important;
-   }
+    h1 {
+      margin-left: 20px;
+      text-align: center;
+    }
+  }
 
-   .w_100 {
-     width: 100% !important;
-   }
+  #contenido {
+    justify-content: center;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
 
+    img, #img1 {
+      margin: 50px auto;
+      width: 100%;
+      // display: block;
+    }
+  }
 
-   .footer {
-     text-align: center;
-     color: $secondary-color;
-   }
+  @media screen and (max-width: 320px) {
+    #inicio, #problems, #leaderboards{
+      display: none;
+    }
 
-   .navbar {
-     background-color: $navbar-color;
-     margin-top: 0px;
-     margin-bottom: 10px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-decoration: none;
-     font-family: Arial;
-     img {
-       margin-top: 5px;
-     }
-      a:link, a:visited, a:active{
-       color: $navbar-textcolor;
-     }
-      a:hover {
-       color: $navbar-hover-color;
-     }
-   }
+    #contenido {
+      #img1 {
+        display: none;
+      }
+    }
+  }
 
-   .content {
-     display: flex;
-     justify-content: space-around;
-     flex-direction: column;
-     align-items: center;
-
-     h1 {
-       margin-left: 20px;
-       text-align: center;
-     }
-   }
-
-   #contenido {
-     justify-content: center;
-     text-align: justify;
-     margin-left: 20px;
-     margin-right: 20px;
-     img, #img1 {
-       margin: 50px auto;
-       width: 100%;
-       // display: block;
-     }
-   }
-
-   @media screen and (max-width: 320px) {
-     #inicio, #problems, #leaderboards{
-       display: none;
-     }
-
-
-
-     #contenido {
-       #img1 {
-         display: none;
-       }
-     }
-   }
-
-   #facebook-icon {
-      margin: 5px;
-      width: 5%;
-   }
+  #facebook-icon {
+    margin: 5px;
+    width: 5%;
+  }
 
 /* ==========================================================================
    Helper classes

@@ -87,8 +87,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.center {
-  text-align: center;
+body {
+  background-color: #efefef;
 }
 
 .display_flex {
@@ -113,152 +113,7 @@ textarea {
 
 .footer {
   text-align: center;
-  color: coral;
-}
-
-.navbar {
-  background-color: #101010;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-family: Arial;
-}
-.navbar img {
-  margin-top: 5px;
-}
-.navbar a:link, .navbar a:visited, .navbar a:active {
-  color: #fff;
-}
-.navbar a:hover {
-  color: #333;
-}
-
-.content {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
-.content h1 {
-  margin-left: 20px;
-  text-align: center;
-}
-
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-.display_flex {
-  display: flex !important;
-}
-
-.row {
-  flex-direction: row !important;
-}
-
-.al_start {
-  align-items: flex-start;
-}
-
-.jus_around {
-  justify-content: space-around !important;
-}
-
-.w_100 {
-  width: 100% !important;
-}
-
-.footer {
-  text-align: center;
-  color: coral;
+  color: #caebf2;
 }
 
 .navbar {
@@ -325,7 +180,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #ff393f;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -340,7 +195,7 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #a9a9a9;
   padding: 20px;
 }
 
@@ -370,6 +225,13 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+#login_bttn {
+  background-color: #caebf2;
+  float: none;
+  color: black;
+  border: 1px solid #a9a9a9;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
