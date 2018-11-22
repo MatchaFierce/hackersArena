@@ -1,169 +1,3 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-$primary-color: white;
-$secondary-color: coral;
-$primary-button-color: lightblue;
-$navbar-color: #101010;
-$navbar-textcolor: #fff;
-$navbar-hover-color: #333;
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-    .center {
-      text-align: center;
-    }
-
-   .display_flex {
-     display: flex !important;
-   }
-
-   .row {
-     flex-direction: row !important;
-   }
-
-   .al_start {
-     align-items: flex-start;
-   }
-
-   .jus_around {
-     justify-content: space-around!important;
-   }
-
-   .w_100 {
-     width: 100% !important;
-   }
-
-
-   .footer {
-     text-align: center;
-     color: $secondary-color;
-   }
-
-   .navbar {
-     background-color: $navbar-color;
-     margin-top: 0px;
-     margin-bottom: 10px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-decoration: none;
-     font-family: Arial;
-     img {
-       margin-top: 5px;
-     }
-      a:link, a:visited, a:active{
-       color: $navbar-textcolor;
-     }
-      a:hover {
-       color: $navbar-hover-color;
-     }
-   }
-
-   .content {
-     display: flex;
-     justify-content: space-around;
-     flex-direction: column;
-     align-items: center;
-
-     h1 {
-       margin-left: 20px;
-       text-align: center;
-     }
-   }
    /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
    /*
@@ -182,9 +16,11 @@ textarea {
        line-height: 1.4;
    }
 
-   $primary-color: white;
-   $secondary-color: coral;
-   $primary-button-color: lightblue;
+   $page-color: #efefef;
+   $primary-color: #a9a9a9;
+   $secondary-color: #caebf2;
+   $primary-button-color: #ff393f;
+   $primary-button-color-hover: #b30000;
    $navbar-color: #101010;
    $navbar-textcolor: #fff;
    $navbar-hover-color: #333;
@@ -269,146 +105,157 @@ textarea {
    /* ==========================================================================
       Author's custom styles
       ========================================================================== */
+    body {
+      background-color: $page-color;
+    }
+
+    .display_flex {
+      display: flex !important;
+    }
+
+    .row {
+      flex-direction: row !important;
+    }
+
+    .al_start {
+      align-items: flex-start;
+    }
+
+    .jus_around {
+      justify-content: space-around!important;
+    }
+
+    .w_100 {
+      width: 100% !important;
+    }
 
 
-      .display_flex {
-        display: flex !important;
+    .footer {
+      text-align: center;
+      color: $secondary-color;
+    }
+
+    .navbar {
+      background-color: $navbar-color;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-family: Arial;
+
+      .img {
+        margin-top: 5px;
       }
 
-      .row {
-        flex-direction: row !important;
+      .a, a:link, a:visited, a:active{
+        color: $navbar-textcolor;
       }
 
-      .al_start {
-        align-items: flex-start;
+      .a, a:hover {
+        color: $navbar-hover-color;
       }
+    }
 
-      .jus_around {
-        justify-content: space-around!important;
-      }
-
-      .w_100 {
-        width: 100% !important;
-      }
-
-
-      .footer {
-        text-align: center;
-        color: $secondary-color;
-      }
-
-      .navbar {
-        background-color: $navbar-color;
-        margin-top: 0px;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-family: Arial;
-        .img {
-          margin-top: 5px;
+    #login {
+      text-align: center;
+      #login_bttn {
+        a {
+          color: black;
+          text-decoration: none;
         }
-        .a, a:link, a:visited, a:active{
-          color: $navbar-textcolor;
-        }
-        .a, a:hover {
-          color: $navbar-hover-color;
-        }
-
       }
+    }
 
-     #login {
-       text-align: center;
-       #login_bttn {
-         a {
-           color: black;
-           text-decoration: none;
-         }
-       }
-     }
+    #forgot_password {
+      color: blue;
+      text-decoration: underline;
+      text-align: center;
+    }
 
-     #forgot_password {
-       color: blue;
-       text-decoration: underline;
-       text-align: center;
-     }
+    #facebook-icon {
+      margin: 5px;
+      width: 5%;
+    }
 
-     #facebook-icon {
-        margin: 5px;
-        width: 5%;
-     }
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: 10%;
+    }
 
-     .container {
-       border-radius: 5px;
-       background-color: #f2f2f2;
-       padding: 20px;
-       margin: 10%;
-     }
+    * {
+      box-sizing: border-box;
+    }
 
-     * {
-       box-sizing: border-box;
-     }
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
 
-     input[type=text], select, textarea {
-       width: 100%;
-       padding: 12px;
-       border: 1px solid #ccc;
-       border-radius: 4px;
-       resize: vertical;
-     }
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
 
-     label {
-       padding: 12px 12px 12px 0;
-       display: inline-block;
-     }
+    input[type=submit] {
+      background-color: $primary-button-color;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
 
-     input[type=submit] {
-       background-color: #4CAF50;
-       color: white;
-       padding: 12px 20px;
-       border: none;
-       border-radius: 4px;
-       cursor: pointer;
-       float: right;
-     }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
 
-     input[type=submit]:hover {
-       background-color: #45a049;
-     }
+    .container {
+      border-radius: 5px;
+      background-color: #a9a9a9;
+      padding: 20px;
+    }
 
-     .container {
-       border-radius: 5px;
-       background-color: #f2f2f2;
-       padding: 20px;
-     }
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
 
-     .col-25 {
-       float: left;
-       width: 25%;
-       margin-top: 6px;
-     }
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
 
-     .col-75 {
-       float: left;
-       width: 75%;
-       margin-top: 6px;
-     }
-
-     /* Clear floats after the columns */
-     .row:after {
-       content: "";
-       display: table;
-       clear: both;
-     }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
      @media screen and (max-width: 600px) {
-       .col-25, .col-75, input[type=submit] {
-           width: 100%;
-           margin-top: 0;
-       }
-     }
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+    #login_bttn {
+      background-color: $secondary-color;
+      float: none;
+      color: black;
+      border: 1px solid $primary-color;
+    }
 
    /* ==========================================================================
       Helper classes
