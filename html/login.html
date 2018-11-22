@@ -22,27 +22,40 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="header">
+  <header class="header">
     <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
       <img id="logo_img" class="navbar" src="../img/logo-50x40.png" alt="Logo">
-      <a href="../index.html" class="navbar"> Inicio </a>
-      <a href="./problems.html" class="navbar"> Problems </a>
-      <a href="./leaderboards.html" class="navbar"> Leaderboards </a>
-      <a href="#" class="navbar"> Log In</a>
+      <a id="inicio" href="../index.html" class="navbar"> Inicio </a>
+      <a id="problems" href="./problems.html" class="navbar"> Problems </a>
+      <a id="leaderboards" href="./leaderboards.html" class="navbar"> Leaderboards </a>
+      <a id="login" href="#" class="navbar">Login</a>
     </div>
-  </div>
-  <div id="form_section">
-    <form id="login_form" action="#" method="post">
-        Email:<br />
-        <input type="email" name="email" placeholder="Your email">
-        <br /><br />
-        Password:<br />
-        <input type="password" name="password" placeholder="Your password">
-        <br />
-        <br />
-        <input type="submit" value="Login">
-    </form>
-  </div>
+  </header>
+
+  <div class="container">
+  <form action="#">
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="password" name="password" placeholder="Your password..">
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
   <div id="signup">
     Already have an account?
     <button id="signup_bttn"><a href="./signup.html">Sign up</a></button>
@@ -56,9 +69,6 @@
   <div class="footer">
     <a href="#">
       <img id="facebook-icon" src="../img/fb_icon.png" alt="">
-    </a>
-    <a href="">
-      <img src="" alt="">
     </a>
   </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

@@ -103,7 +103,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+    .center {
+      text-align: center;
+    }
 
    .display_flex {
      display: flex !important;
@@ -170,7 +172,8 @@ textarea {
      margin-right: 20px;
      img, #img1 {
        margin: 50px auto;
-       display: block;
+       width: 100%;
+       // display: block;
      }
    }
 
@@ -188,18 +191,10 @@ textarea {
      }
    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+   #facebook-icon {
+      margin: 5px;
+      width: 5%;
+   }
 
 /* ==========================================================================
    Helper classes

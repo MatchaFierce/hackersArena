@@ -12,8 +12,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/signup.css">
 </head>
 
 <body>
@@ -24,17 +24,39 @@
   <!-- Add your site or application content here -->
   <div class="header">
     <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
-      <img id="logo_img" class="navbar" src="./img/logo-50x40.png" alt="">
-      <a id="inicio" href="index.html" class="navbar"> Inicio </a>
-      <a id="inicio" href="" class="navbar"> Problems </a>
-      <a id="inicio" href="" class="navbar"> Leaderboards </a>
-      <a id="Log In" href="" class="navbar"> Log In</a>
+      <img id="logo_img" class="navbar" src="../img/logo-50x40.png" alt="Logo">
+      <a href="../index.html" class="navbar"> Inicio </a>
+      <a href="./problems.html" class="navbar"> Problems </a>
+      <a href="./leaderboards.html" class="navbar"> Leaderboards </a>
+      <a href="./login.html" class="navbar"> Log In</a>
     </div>
-    <h1>Hello world! This is HTML5 Boilerplate.</h1>
   </div>
+  <div class="container">
+  <form action="#">
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email">
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+  <div id="login">
+    Remembered your password?
+    <button id="login_bttn"><a href="./login.html">Login</a></button>
+  </div>
+  <br />
+  <br />
   <div class="footer">
-    <p>Este es el footer weon</p>
-    <img id="facebook-icon" src="./img/fb_icon.png" alt="">
+    <a href="#">
+      <img id="facebook-icon" src="../img/fb_icon.png" alt="">
+    </a>
   </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="js/plugins.js"></script>
