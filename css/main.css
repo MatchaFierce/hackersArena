@@ -87,6 +87,82 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.display_flex {
+  display: flex !important;
+}
+
+.row {
+  flex-direction: row !important;
+}
+
+.al_start {
+  align-items: flex-start;
+}
+
+.jus_around {
+  justify-content: space-around !important;
+}
+
+.w_100 {
+  width: 100% !important;
+}
+
+.footer {
+  text-align: center;
+  color: coral;
+}
+
+.navbar {
+  background-color: #101010;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial;
+}
+.navbar img {
+  margin-top: 5px;
+}
+.navbar a:link, .navbar a:visited, .navbar a:active {
+  color: #fff;
+}
+.navbar a:hover {
+  color: #333;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.content h1 {
+  margin-left: 20px;
+  text-align: center;
+}
+
+#contenido {
+  justify-content: center;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#contenido img, #contenido #img1 {
+  margin: 50px auto;
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+  #inicio, #problems, #leaderboards {
+    display: none;
+  }
+
+  #contenido #img1 {
+    display: none;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

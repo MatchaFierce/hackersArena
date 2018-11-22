@@ -16,6 +16,13 @@ html {
     line-height: 1.4;
 }
 
+$primary-color: white;
+$secondary-color: coral;
+$primary-button-color: lightblue;
+$navbar-color: #101010;
+$navbar-textcolor: #fff;
+$navbar-hover-color: #333;
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -98,7 +105,88 @@ textarea {
    ========================================================================== */
 
 
+   .display_flex {
+     display: flex !important;
+   }
 
+   .row {
+     flex-direction: row !important;
+   }
+
+   .al_start {
+     align-items: flex-start;
+   }
+
+   .jus_around {
+     justify-content: space-around!important;
+   }
+
+   .w_100 {
+     width: 100% !important;
+   }
+
+
+   .footer {
+     text-align: center;
+     color: $secondary-color;
+   }
+
+   .navbar {
+     background-color: $navbar-color;
+     margin-top: 0px;
+     margin-bottom: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     font-family: Arial;
+     img {
+       margin-top: 5px;
+     }
+      a:link, a:visited, a:active{
+       color: $navbar-textcolor;
+     }
+      a:hover {
+       color: $navbar-hover-color;
+     }
+   }
+
+   .content {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     align-items: center;
+
+     h1 {
+       margin-left: 20px;
+       text-align: center;
+     }
+   }
+
+   #contenido {
+     justify-content: center;
+     text-align: justify;
+     margin-left: 20px;
+     margin-right: 20px;
+     img, #img1 {
+       margin: 50px auto;
+       display: block;
+     }
+   }
+
+   @media screen and (max-width: 320px) {
+     #inicio, #problems, #leaderboards{
+       display: none;
+     }
+
+
+
+     #contenido {
+       #img1 {
+         display: none;
+       }
+     }
+   }
 
 
 
@@ -201,6 +289,7 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
 }
 
 @media print,

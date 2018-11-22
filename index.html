@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Hacker's Arena </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,8 +12,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -22,19 +22,41 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <header class="header">
+    <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
+      <img id="logo_img" class="navbar" src="./img/logo-50x40.png" alt="">
+      <a id="inicio" href="index.html" class="navbar"> Inicio </a>
+      <a id="problems" href="" class="navbar"> Problems </a>
+      <a id="leaderboards" href="" class="navbar"> Leaderboards </a>
+      <a id=" login" href="" class="navbar"> Log In</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="content display_flex">
+      <img id="logoimg" src="./img/logo.png" alt="">
+      <h1>Welcome to Hacker's Arena.</h1>
+      <br>
+    </div>
+
+    <div id="contenido">
+      <img id="img1" src="./img/img1.jpg" >
+      <p>Compete with the best developers and challenge yourself!</p>
+      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus posuere tincidunt. Sed interdum condimentum lacinia. Vestibulum risus erat, sollicitudin quis nulla eget, egestas tempor risus. Fusce sit amet dignissim elit. Nulla aliquet varius nulla sed porta. Praesent vestibulum velit vitae dui facilisis, eget gravida nunc ultricies. Curabitur id lacus convallis, tempor nibh ut, interdum lorem. Cras dignissim dapibus ligula, non faucibus velit elementum vel. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam hendrerit id nunc quis feugiat. Sed sit amet erat vitae nunc dictum fringilla rutrum vitae nisi.
+        Vivamus ultricies sapien nisi. Sed viverra ex id ex scelerisque, a ullamcorper lorem dapibus. Fusce sem eros, mattis vitae metus cursus, vehicula sagittis tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet tristique erat. Nunc sollicitudin ligula scelerisque risus tincidunt pretium. Cras facilisis aliquet nulla. Duis sollicitudin magna turpis, ac scelerisque felis pretium eget. Nulla sit amet diam id neque hendrerit molestie. Donec ut urna mi. Cras venenatis ex eget nunc auctor porta. </p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2018 - Hacker's Arena</p>
+    <a> Políticas de Privacidad </a>
+    <img id="facebook-icon" src="fb_icon.png" alt="">
+  </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
