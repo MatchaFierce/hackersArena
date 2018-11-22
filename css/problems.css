@@ -90,6 +90,9 @@ textarea {
 body {
   background-color: #efefef;
 }
+body main {
+  padding: 2%;
+}
 
 .center {
   text-align: center;
@@ -149,6 +152,10 @@ body {
 .content h1 {
   margin-left: 20px;
   text-align: center;
+}
+
+#slogan_container img {
+  width: 50px;
 }
 
 #contenido {

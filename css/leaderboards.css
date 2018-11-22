@@ -182,11 +182,16 @@ body {
 
 #leaderboard {
   border: 1px solid black;
+  background-color: #caebf2;
 }
 #leaderboard thead {
+  background-color: #ff393f;
   border: 1px solid black;
 }
-#leaderboard thead th {
+#leaderboard thead tr {
+  border: 1px solid black;
+}
+#leaderboard thead tr th {
   border: 1px solid black;
 }
 #leaderboard tbody {
