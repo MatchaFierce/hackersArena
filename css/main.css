@@ -122,7 +122,7 @@ body {
 }
 
 .navbar {
-  background-color: #6b7a8f;
+  background-color: #f7c331;
   min-height: 50px;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -136,10 +136,10 @@ body {
   margin-top: 5px;
 }
 .navbar a:link, .navbar a:visited, .navbar a:active {
-  color: #fff;
+  color: #051429;
 }
 .navbar a:hover {
-  color: #303640;
+  color: #526176;
 }
 
 .content {
