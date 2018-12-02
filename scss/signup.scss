@@ -16,14 +16,16 @@
        line-height: 1.4;
    }
 
-   $page-color: #efefef;
+   $page-color: #f9f5f0;
+   $page-text-color: #000;
    $primary-color: #a9a9a9;
    $secondary-color: #caebf2;
-   $primary-button-color: #ff393f;
+   $primary-button-color: #f7882f;
    $primary-button-color-hover: #b30000;
-   $navbar-color: #101010;
+   $form-background-color: #dcc7aa;
+   $navbar-color: #6b7a8f;
    $navbar-textcolor: #fff;
-   $navbar-hover-color: #333;
+   $navbar-hover-color: #303640;
 
    /*
     * Remove text-shadow in selection highlight:
@@ -219,7 +221,7 @@
 
     .container {
       border-radius: 5px;
-      background-color: #a9a9a9;
+      background-color: $form-background-color;
       padding: 20px;
     }
 
@@ -251,10 +253,10 @@
     }
 
     #login_bttn {
-      background-color: $secondary-color;
+      background-color: $primary-button-color;
       float: none;
       color: black;
-      border: 1px solid $primary-color;
+      border: 1px solid black;
     }
 
    /* ==========================================================================
