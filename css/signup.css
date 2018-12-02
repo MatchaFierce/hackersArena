@@ -117,7 +117,7 @@ body {
 }
 
 .navbar {
-  background-color: #6b7a8f;
+  background-color: #f7c331;
   margin-top: 0px;
   margin-bottom: 10px;
   display: flex;
@@ -130,10 +130,10 @@ body {
   margin-top: 5px;
 }
 .navbar .a, .navbar a:link, .navbar a:visited, .navbar a:active {
-  color: #fff;
+  color: #051429;
 }
 .navbar .a, .navbar a:hover {
-  color: #303640;
+  color: #526176;
 }
 
 #login {
@@ -212,7 +212,7 @@ input[type=submit]:hover {
 }
 
 /* Clear floats after the columns */
-.row:after {
+.container .row:after {
   content: "";
   display: table;
   clear: both;

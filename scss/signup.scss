@@ -20,12 +20,12 @@
    $page-text-color: #000;
    $primary-color: #a9a9a9;
    $secondary-color: #caebf2;
+   $form-background-color: #dcc7aa;
    $primary-button-color: #f7882f;
    $primary-button-color-hover: #b30000;
-   $form-background-color: #dcc7aa;
-   $navbar-color: #6b7a8f;
-   $navbar-textcolor: #fff;
-   $navbar-hover-color: #303640;
+   $navbar-color: #f7c331;
+   $navbar-textcolor: #051429;
+   $navbar-hover-color: #526176;
 
    /*
     * Remove text-shadow in selection highlight:
@@ -238,7 +238,7 @@
     }
 
     /* Clear floats after the columns */
-    .row:after {
+    .container .row:after {
       content: "";
       display: table;
       clear: both;
