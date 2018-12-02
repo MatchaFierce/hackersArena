@@ -88,7 +88,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  background-color: #efefef;
+  background-color: #f9f5f0;
 }
 
 .center {
@@ -121,7 +121,7 @@ body {
 }
 
 .navbar {
-  background-color: #101010;
+  background-color: #6b7a8f;
   margin-top: 0px;
   margin-bottom: 10px;
   display: flex;
@@ -137,7 +137,7 @@ body {
   color: #fff;
 }
 .navbar a:hover {
-  color: #333;
+  color: #303640;
 }
 
 #signup {
@@ -184,7 +184,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #ff393f;
+  background-color: #f7882f;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -199,7 +199,7 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #a9a9a9;
+  background-color: #dcc7aa;
   padding: 20px;
 }
 
@@ -223,10 +223,10 @@ input[type=submit]:hover {
 }
 
 #signup_bttn {
-  background-color: #caebf2;
+  background-color: #f7882f;
   float: none;
   color: black;
-  border: 1px solid #a9a9a9;
+  border: 1px solid black;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

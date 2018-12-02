@@ -88,7 +88,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  background-color: #efefef;
+  background-color: #f9f5f0;
+  color: #000;
 }
 body main {
   padding: 2%;
@@ -124,7 +125,7 @@ body main {
 }
 
 .navbar {
-  background-color: #101010;
+  background-color: #6b7a8f;
   margin-top: 0px;
   margin-bottom: 10px;
   display: flex;
@@ -140,7 +141,7 @@ body main {
   color: #fff;
 }
 .navbar a:hover {
-  color: #333;
+  color: #303640;
 }
 
 .content {
