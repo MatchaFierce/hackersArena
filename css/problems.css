@@ -1,0 +1,104 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  background-color: #f9f5f0;
+  color: #000;
+}
+body main {
+  padding: 2%;
+}
+
+.center {
+  text-align: center;
+}
+
+.display_flex {
+  display: flex !important;
+}
+
+.row {
+  flex-direction: row !important;
+}
+
+.al_start {
+  align-items: flex-start;
+}
+
+.jus_around {
+  justify-content: space-around !important;
+}
+
+.w_100 {
+  width: 100% !important;
+}
+
+.footer {
+  text-align: center;
+  color: black;
+}
+
+.navbar {
+  background-color: #f7c331;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial;
+}
+.navbar img {
+  margin-top: 5px;
+}
+.navbar a:link, .navbar a:visited, .navbar a:active {
+  color: #051429;
+}
+.navbar a:hover {
+  color: #526176;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.content h1 {
+  margin-left: 20px;
+  text-align: center;
+}
+
+#slogan_container img {
+  width: 50px;
+}
+
+#contenido {
+  justify-content: center;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#contenido img, #contenido #img1 {
+  margin: 50px auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  #inicio, #problems, #leaderboards {
+    display: none;
+  }
+
+  #contenido #img1 {
+    display: none;
+  }
+}
+#facebook-icon {
+  margin: 5px;
+  width: 5%;
+}
+
+/*# sourceMappingURL=problems.css.map */
