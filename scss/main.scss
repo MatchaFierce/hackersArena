@@ -19,7 +19,12 @@ html {
 $page-color: #f9f5f0;
 $page-text-color: #000;
 $primary-color: #a9a9a9;
+$darker-color: #6b7a8f;
+$medium-color: #f7882f;
+$mediuml-color: #f7c331;
+$light-color: #526176;
 $secondary-color: #caebf2;
+$form-background-color: #dcc7aa;
 $primary-button-color: #f7882f;
 $primary-button-color-hover: #b30000;
 $navbar-color: #f7c331;
@@ -145,7 +150,7 @@ textarea {
     background-color: $navbar-color;
     min-height: 50px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +158,9 @@ textarea {
     font-family: Arial;
 
     img {
-      margin-top: 5px;
+      margin-top: 1px;
+      max-width: auto;
+      height: 30px;
     }
 
     a:link, a:visited, a:active{
@@ -184,7 +191,6 @@ textarea {
     margin-right: 20px;
 
     img, #img1 {
-      margin: 50px auto;
       width: 100%;
       // display: block;
     }
@@ -206,6 +212,77 @@ textarea {
     margin: 5px;
     width: 5%;
   }
+
+
+////// ASIDE
+  aside {
+  background-color: $form-background-color;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  float: left;
+  height: 500;
+  margin-right: 100px;
+  margin: 10px;
+  width: 250px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  table {
+    margin: 0 auto;
+    text-align: center;
+    border-color: black;
+  }
+  h2 {
+    background-color: $medium-color;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  h2:hover
+  {
+    color: $darker-color;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link, a:visited, a:active{
+   color: white;
+  }
+  a:hover {
+   color: $darker-color;
+  }
+}
+
+aside div {
+  margin: 5px;
+  border-width:1px;
+  border-color: white;
+}
+
+///// FIELDSET
+.fieldset {
+  border-color: transparent;
+  border-radius: 10px;
+  margin: 10px 115px 10px 50px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.fieldset2 {
+  border-color: transparent;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.abajo {
+  margin: 4%;
+}
+
+
 
 /* ==========================================================================
    Helper classes

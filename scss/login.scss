@@ -143,6 +143,7 @@ textarea {
 
   .navbar {
     background-color: $navbar-color;
+    min-height: 50px;
     margin-top: 0px;
     margin-bottom: 10px;
     display: flex;
@@ -156,11 +157,11 @@ textarea {
     }
 
     a:link, a:visited, a:active{
-      color: $navbar-textcolor;
+     color: $navbar-textcolor;
     }
 
     a:hover {
-      color: $navbar-hover-color;
+     color: $navbar-hover-color;
     }
   }
 
@@ -243,7 +244,7 @@ textarea {
   }
 
   /* Clear floats after the columns */
-  .row:after {
+  .container .row:after {
     content: "";
     display: table;
     clear: both;

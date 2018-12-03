@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Hacker's Arena </title>
+  <title>Hacker's Arena - Leaderboards </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/leaderboards.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -33,6 +34,29 @@
   </header>
 
   <main>
+    <aside>
+      <div>
+        <h2 id= userName > <a href="profile.html"> User </a> </h2>
+        <img id="logoimg" src="../img/logo.png" alt="">
+        <table id="tableUser">
+          <thead>
+            <tr>
+              <th>Clasification</th>
+              <th>Points</th>
+              <th>Resolved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id=userClasification>0</td>
+              <td id=userPoints>0</td>
+              <td id=userResolved>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+
     <div class="display_flex jus_center">
       <table id="leaderboard">
         <thead>
