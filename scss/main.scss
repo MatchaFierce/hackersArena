@@ -146,30 +146,43 @@ textarea {
    color: $darker-color;
   }
 
-  .navbar {
+  .menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0 0 50px;
+  }
+
+  .collapsible-menu {
     background-color: $navbar-color;
-    min-height: 50px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-family: Arial;
+    padding: 0px 30px;
+    border-bottom: 3px solid $navbar-color;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
 
-    img {
-      margin-top: 1px;
-      max-height:  30px;
-      width: auto;
+    ul {
+      list-style-type: none;
+      padding: 0;
     }
 
-    a:link, a:visited, a:active{
-     color: $navbar-textcolor;
+    a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      &:link, &:visited, &:active{
+       color: $navbar-textcolor;
+      }
+      &:hover {
+        color: $navbar-hover-color;
+      }
     }
+  }
 
-    a:hover {
-     color: $navbar-hover-color;
-    }
+  input#menu {
+    display: none;
+  }
+
+  input:checked ~ .menu-content {
+      max-height: 100%;
   }
 
   .content {
@@ -194,23 +207,6 @@ textarea {
       width: 100%;
       // display: block;
     }
-  }
-
-  @media screen and (max-width: 320px) {
-    #inicio, #problems, #leaderboards{
-      display: none;
-    }
-
-    #contenido {
-      #img1 {
-        display: none;
-      }
-    }
-  }
-
-  #facebook-icon {
-    margin: 5px;
-    width: 5%;
   }
 
 

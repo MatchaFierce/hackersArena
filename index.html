@@ -14,21 +14,22 @@
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
   <header class="header">
-    <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
-      <img class="logoimg navbar" src="./img/logo-50x40.png" alt="Logo">
-      <a id="inicio" href="index.html" class="navbar"> Inicio </a>
-      <a id="problems" href="./html/problems.html" class="navbar"> Problems </a>
-      <a id="leaderboards" href="./html/leaderboards.html" class="navbar"> Leaderboards </a>
-      <a id="login" href="./html/login.html" class="navbar">Login</a>
+    <div id="navbar" class="collapsible-menu">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="menu-content">
+        <ul>
+          <li><a id="inicio" href="#" class="navbar">Inicio</a></li>
+          <li><a id="problems" href="./html/problems.html" class="navbar">Problems</a></li>
+          <li><a id="leaderboards" href="./html/leaderboards.html" class="navbar">Leaderboards</a></li>
+          <li><a id="login" href="./html/login.html" class="navbar">Login</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -84,7 +85,6 @@
       <img id="facebook-icon" src="./img/fb_icon.png" alt="Facebook logo">
     </a>
   </footer>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
