@@ -1,3 +1,27 @@
+.center {
+  text-align: center;
+}
+
+.display_flex {
+  display: flex !important;
+}
+
+.row {
+  flex-direction: row !important;
+}
+
+.al_start {
+  align-items: flex-start;
+}
+
+.jus_around {
+  justify-content: space-around !important;
+}
+
+.w_100 {
+  width: 100% !important;
+}
+
 @font-face {
   font-family: "Oswald", sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -44,46 +68,6 @@ body {
 .footer {
   text-align: center;
   color: black;
-}
-
-.menu-content {
-  max-height: 0;
-  overflow: hidden;
-  font-family: "Oswald", sans-serif;
-  padding: 0 0 0 50px;
-}
-
-.collapsible-menu {
-  background-color: #f7c331;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.collapsible-menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-.collapsible-menu a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-}
-.collapsible-menu a:link, .collapsible-menu a:visited, .collapsible-menu a:active {
-  color: #051429;
-}
-.collapsible-menu a:hover {
-  color: #526176;
-}
-
-input#menu {
-  display: none;
-}
-
-input:checked ~ .menu-content {
-  max-height: 100%;
 }
 
 .content {

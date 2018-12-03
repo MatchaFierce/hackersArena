@@ -1,3 +1,8 @@
+// Utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/flexbox";
+
 
    @font-face {
      font-family: 'Oswald', sans-serif;
@@ -11,16 +16,6 @@
        //font-family: 'Open Sans', sans-serif;
    }
 
-$page-color: #f9f5f0;
-$page-text-color: #000;
-$primary-color: #a9a9a9;
-$secondary-color: #caebf2;
-$form-background-color: #dcc7aa;
-$primary-button-color: #f7882f;
-$primary-button-color-hover: #b30000;
-$navbar-color: #f7c331;
-$navbar-textcolor: #051429;
-$navbar-hover-color: #526176;
 
 
   body {
@@ -58,48 +53,6 @@ $navbar-hover-color: #526176;
   .footer {
    text-align: center;
    color: black;
-  }
-
-  .menu-content {
-    max-height: 0;
-    overflow: hidden;
-    font-family: 'Oswald', sans-serif;
-    padding: 0 0 0 50px;
-  }
-
-  .collapsible-menu {
-    background-color: $navbar-color;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    a {
-      display:block;
-      padding: 10px;
-      text-decoration: none;
-      &:link, &:visited, &:active{
-       color: $navbar-textcolor;
-      }
-      &:hover {
-        color: $navbar-hover-color;
-      }
-    }
-  }
-
-  input#menu {
-    display: none;
-  }
-
-  input:checked ~ .menu-content {
-      max-height: 100%;
   }
 
   .content {

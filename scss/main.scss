@@ -1,3 +1,8 @@
+// Utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/flexbox";
+
    @font-face {
      font-family: 'Oswald', sans-serif;
      font-family: 'Open Sans', sans-serif;
@@ -19,20 +24,7 @@ body {
   margin-bottom: 40px;
 }
 
-$page-color: #f9f5f0;
-$page-text-color: #000;
-$primary-color: #a9a9a9;
-$darker-color: #6b7a8f;
-$medium-color: #f7882f;
-$mediuml-color: #f7c331;
-$light-color: #526176;
-$secondary-color: #caebf2;
-$form-background-color: #dcc7aa;
-$primary-button-color: #f7882f;
-$primary-button-color-hover: #b30000;
-$navbar-color: #f7c331;
-$navbar-textcolor: #051429;
-$navbar-hover-color: #526176;
+
 
 
   body {
@@ -40,77 +32,9 @@ $navbar-hover-color: #526176;
     color: $page-text-color!important;
   }
 
-  .center {
-    text-align: center;
-  }
-
-  .display_flex {
-   display: flex !important;
-  }
-
-  .row {
-   flex-direction: row !important;
-  }
-
-  .al_start {
-   align-items: flex-start;
-  }
-
-  .jus_around {
-   justify-content: space-around!important;
-  }
-
-  .w_100 {
-    width: 100% !important;
-  }
-
   .footer {
    text-align: center;
    color: $darker-color;
-  }
-
-  .menu-content {
-    max-height: 0;
-    overflow: hidden;
-    font-family: 'Oswald', sans-serif;
-    padding: 0 0 0 50px;
-  }
-
-  .collapsible-menu {
-    background-color: $navbar-color;
-    min-height: 50px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    img {
-      margin-top: 1px;
-      max-height:  30px;
-      width: auto;
-    }
-
-    a {
-      display: block;
-      padding: 10px;
-      text-decoration: none;
-      &:link, &:visited, &:active{
-       color: $navbar-textcolor;
-      }
-      &:hover {
-        color: $navbar-hover-color;
-      }
-    }
-  }
-
-  input#menu {
-    display: none;
-  }
-
-  input:checked ~ .menu-content {
-      max-height: 100%;
   }
 
   .content {

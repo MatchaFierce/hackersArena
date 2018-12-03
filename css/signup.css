@@ -1,16 +1,5 @@
-@font-face {
-  font-family: "Oswald", sans-serif;
-  font-family: "Open Sans", sans-serif;
-}
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: "Oswald", sans-serif;
-}
-
-body {
-  background-color: #f9f5f0;
+.center {
+  text-align: center;
 }
 
 .display_flex {
@@ -33,28 +22,24 @@ body {
   width: 100% !important;
 }
 
+@font-face {
+  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #f9f5f0;
+}
+
 .footer {
   text-align: center;
   color: #caebf2;
-}
-
-.navbar {
-  background-color: #f7c331;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.navbar .img {
-  margin-top: 5px;
-}
-.navbar .a, .navbar a:link, .navbar a:visited, .navbar a:active {
-  color: #051429;
-}
-.navbar .a, .navbar a:hover {
-  color: #526176;
 }
 
 #login {
