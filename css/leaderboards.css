@@ -7,10 +7,15 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@font-face {
+  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: "Oswald", sans-serif;
 }
 
 /*
@@ -132,7 +137,6 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-family: Arial;
 }
 .navbar img {
   margin-top: 5px;
@@ -203,6 +207,12 @@ body {
 }
 #leaderboard tbody td img {
   width: 50px;
+}
+
+fieldset {
+  border: 1px;
+  width: 400px;
+  margin: auto;
 }
 
 /* ==========================================================================
