@@ -18,12 +18,17 @@
 
 <body>
   <header class="header">
-    <nav id="navbar" class="navbar display_flex al_start row jus_around w_100">
-      <img id="logo_img" class="navbar" src="./img/logo-50x40.png" alt="Logo">
-      <a href="index.html"> Inicio </a>
-      <a href="./html/problems.html"> Problems </a>
-      <a href="./html/leaderboards.html"> Leaderboards </a>
-      <a href="./html/login.html">Login</a>
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./html/problems.html">Problems</a></li>
+          <li><a href="./html/leaderboards.html">Leaderboards</a></li>
+          <li><a href="./html/login.html">Login</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -36,7 +41,7 @@
 
     <aside>
       <div>
-        <h2 id= userName > <a href="./html/profile.html"> User </a> </h2>
+        <h2 id="userName" > <a href="./html/profile.html"> User </a> </h2>
         <img id="userPicture" src="./img/logo.png" alt="">
         <table id="tableUser">
           <thead>
