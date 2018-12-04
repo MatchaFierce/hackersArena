@@ -1,39 +1,3 @@
-.center {
-  text-align: center;
-}
-
-.display_flex {
-  display: flex !important;
-}
-
-.row {
-  flex-direction: row !important;
-}
-
-.al_start {
-  align-items: flex-start;
-}
-
-.jus_around {
-  justify-content: space-around !important;
-}
-
-.w_100 {
-  width: 100% !important;
-}
-
-@font-face {
-  font-family: "Oswald", sans-serif;
-  font-family: "Open Sans", sans-serif;
-}
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: "Oswald", sans-serif;
-  font-family: "Open Sans", sans-serif;
-}
-
 p {
   margin: 0px;
 }

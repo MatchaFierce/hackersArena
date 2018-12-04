@@ -11,11 +11,10 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/login.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -39,29 +38,29 @@
     </nav>
   </header>
 
-  <section class="container">
-    <form action="#">
-      <div class="row">
-        <div class="col-25">
-          <label for="email">Email</label>
-        </div>
-        <div class="col-75">
-          <input type="email" id="email" name="email" placeholder="Your email">
-        </div>
+  <div class="container">
+  <form action="#" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
       </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="password">Password</label>
-        </div>
-        <div class="col-75">
-          <input type="password" id="password" name="password" placeholder="Your password..">
-        </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email">
       </div>
-      <br />
-      <div class="row">
-        <input aria-label="submit button" type="submit" value="Submit"> <!-- FIXME este deberia ser un boton y no un input -->
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Password</label>
       </div>
-    </form>
+      <div class="col-75">
+        <input type="password" id="password" name="password" placeholder="Your password..">
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <input aria-label="submit button" type="submit" value="Submit">
+    </div>
+  </form>
 </div>
   <div id="signup">
     Don't have an account?
@@ -75,13 +74,14 @@
     <p id="forgot_password"><strong><em>Forgot your password?</em></strong></p>
   </div>
   <br />
-  <footer class="footer">
+  <div class="footer">
     <a href="https://www.facebook.com/michelletorres.mx/">
       <img id="facebook-icon" src="../img/fb_icon.png" alt="">
     </a>
-  </footer>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/login.js"></script>
+  </div>
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
