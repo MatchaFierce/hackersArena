@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var misCabeceras = new Headers();
 
 var miInit = { method: 'GET',
@@ -14,3 +15,6 @@ function obtenerDatos(){
     nombre.innerHTML = response.name;
   })
 }
+=======
+
+>>>>>>> aafc7923bb6ed5e71928c3316dff0b5ad7c5cc72
