@@ -7,15 +7,10 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@font-face {
-  font-family: "Oswald", sans-serif;
-  font-family: "Open Sans", sans-serif;
-}
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: "Oswald", sans-serif;
 }
 
 /*
@@ -68,6 +63,8 @@ video {
  */
 fieldset {
   border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -133,7 +130,7 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
 }
 .navbar img {
   margin-top: 1px;
@@ -407,6 +404,26 @@ h3 {
 h3 {
     page-break-after: avoid;
   }
+}
+form {
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+  display: inline-block;
+  align-content: center;
+}
+
+.btn {
+  background-color: #f7882f;
+  float: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.solution div {
+  max-width: 700px;
+  height: auto;
+  margin: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

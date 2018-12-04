@@ -9,18 +9,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-   @font-face {
-     font-family: 'Oswald', sans-serif;
-     font-family: 'Open Sans', sans-serif;
-   }
-
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Oswald', sans-serif;
-    //font-family: 'Open Sans', sans-serif;
 }
 
 $page-color: #f9f5f0;
@@ -93,6 +86,8 @@ video {
 
 fieldset {
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -117,9 +112,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
   body {
     background-color: $page-color;
     color: $page-text-color!important;
@@ -163,7 +155,8 @@ textarea {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: Arial;
+
     img {
       margin-top: 1px;
       max-height:  30px;
@@ -462,4 +455,27 @@ aside div {
     h3 {
         page-break-after: avoid;
     }
+}
+
+form {
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+  display: inline-block;
+  align-content: center;
+}
+
+.btn {
+  background-color: $primary-button-color;
+  float: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.solution {
+  div {
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+  }
 }

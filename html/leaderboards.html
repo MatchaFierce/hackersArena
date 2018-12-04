@@ -11,7 +11,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/leaderboards.css">
   <link rel="stylesheet" href="../css/main.css">
@@ -24,13 +24,18 @@
 
   <!-- Add your site or application content here -->
   <header class="header">
-    <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
-      <img id="logo_img" class="navbar" src="../img/logo-50x40.png" alt="Logo">
-      <a id="inicio" href="../index.html" class="navbar"> Inicio </a>
-      <a id="problems" href="./problems.html" class="navbar"> Problems </a>
-      <a id="leaderboards" href="#" class="navbar"> Leaderboards </a>
-      <a id="login" href="./login.html" class="navbar">Login</a>
-    </div>
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./problems.html">Problems</a></li>
+          <li><a href="./leaderboards.html">Leaderboards</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -57,33 +62,31 @@
       </div>
     </aside>
 
-    <div class="jus_center">
-      <fieldset>
-        <table id="leaderboard">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Alias</th>
-              <th>Country</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>MatchaFierce</td>
-              <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
-              <td>Mil8Mil</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Franco1010</td>
-              <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
-              <td>+8000</td>
-            </tr>
-          </tbody>
-        </table>
-      </fieldset>
+    <div class="display_flex jus_center">
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Alias</th>
+            <th>Country</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>MatchaFierce</td>
+            <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
+            <td>Mil8Mil</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Franco1010</td>
+            <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
+            <td>+8000</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </main>
 

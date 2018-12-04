@@ -11,7 +11,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/signup.css">
 </head>
@@ -22,15 +22,22 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="header">
-    <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
-      <img id="logo_img" class="navbar" src="../img/logo-50x40.png" alt="Logo">
-      <a href="../index.html" class="navbar"> Inicio </a>
-      <a href="./problems.html" class="navbar"> Problems </a>
-      <a href="./leaderboards.html" class="navbar"> Leaderboards </a>
-      <a href="./login.html" class="navbar"> Login</a>
-    </div>
-  </div>
+  <header class="header">
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./problems.html">Problems</a></li>
+          <li><a href="./leaderboards.html">Leaderboards</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
   <div class="container">
   <form action="#">
     <div class="row">

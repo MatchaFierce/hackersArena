@@ -7,41 +7,53 @@
   <title>Hacker's Arena - Home </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+<<<<<<< HEAD
+  <link rel="stylesheet" href="./css/navbar.css">
+=======
 
   <link rel="stylesheet" href="./css/normalize.css">
+>>>>>>> aafc7923bb6ed5e71928c3316dff0b5ad7c5cc72
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
+>>>>>>> aafc7923bb6ed5e71928c3316dff0b5ad7c5cc72
   <header class="header">
-    <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
-      <img id="logo_img" class="navbar" src="./img/logo-50x40.png" alt="Logo">
-      <a id="inicio" href="index.html" class="navbar"> Inicio </a>
-      <a id="problems" href="./html/problems.html" class="navbar"> Problems </a>
-      <a id="leaderboards" href="./html/leaderboards.html" class="navbar"> Leaderboards </a>
-      <a id="login" href="./html/login.html" class="navbar">Login</a>
-    </div>
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./html/problems.html">Problems</a></li>
+          <li><a href="./html/leaderboards.html">Leaderboards</a></li>
+          <li><a href="./html/login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
     <div class="content display_flex">
-      <img id="logoimg" src="./img/logo.png" alt="">
+      <img class="logoimg" src="./img/logo.png" alt="">
       <h1>Welcome to Hacker's Arena.</h1>
       <br>
     </div>
 
     <aside>
       <div>
-        <h2 id= userName > <a href="./html/profile.html"> User </a> </h2>
+        <h2 id="userName" > <a href="./html/profile.html"> User </a> </h2>
         <img id="userPicture" src="./img/logo.png" alt="">
         <table id="tableUser">
           <thead>
