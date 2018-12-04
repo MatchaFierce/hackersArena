@@ -13,7 +13,7 @@
        font-size: 1em;
        line-height: 1.4;
        font-family: 'Oswald', sans-serif;
-       //font-family: 'Open Sans', sans-serif;
+       font-family: 'Open Sans', sans-serif;
    }
 
 
@@ -81,10 +81,6 @@
   }
 
   @media screen and (max-width: 320px) {
-    #inicio, #problems, #leaderboards{
-      display: none;
-    }
-
     #contenido {
       #img1 {
         display: none;
