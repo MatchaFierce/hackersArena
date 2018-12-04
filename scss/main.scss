@@ -145,7 +145,7 @@ textarea {
 
   .footer {
    text-align: center;
-   color: $secondary-color;
+   color: $darker-color;
   }
 
   .navbar {
@@ -161,8 +161,8 @@ textarea {
 
     img {
       margin-top: 1px;
-      max-width: auto;
-      height: 30px;
+      max-height:  30px;
+      width: auto;
     }
 
     a:link, a:visited, a:active{
@@ -222,7 +222,7 @@ textarea {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   float: left;
-  height: 500;
+  height: 400px;
   margin-right: 100px;
   margin: 10px;
   width: 250px;
@@ -283,7 +283,6 @@ aside div {
 .abajo {
   margin: 4%;
 }
-
 
 
 /* ==========================================================================

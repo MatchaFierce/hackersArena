@@ -30,15 +30,15 @@
 
   <main>
     <div class="banner">
-      <img id="logoimg" src="../img/logo.png" alt="">
+      <img class="logoimg" src="../img/logo.png" alt="">
       <h1>Welcome to Hacker's Arena.</h1>
       <br>
     </div>
 
     <aside>
       <div>
-        <h2 id= userName > <a href="profile.html"> User </a> </h2>
-        <img id="logoimg" src="../img/logo.png" alt="">
+        <h2 id="userName" > <a href="profile.html"> User </a> </h2>
+        <img class="logoimg" src="../img/logo.png" alt="">
         <table id="tableUser">
           <thead>
             <tr>
@@ -59,23 +59,37 @@
     </aside>
 
     <fieldset>
-      <div>
-        <div id="slogan_container" class display_flex>
-          <h1>Ready to Rumble?</h1>
-          <img src="../img/boxing_gloves.png" alt="Boxing gloves">
-        </div>
-        <div>
-          <h2>Round 1</h2>
-          <ul>
-            <li><a href="#">Arithmetic Operations</a></li>
-            <li><a href="#">If clause</a></li>
-            <li><a href="#">While</a></lli>
-            <li><a href="#">Do-While</a></li>
-            <li><a href="#">For</a></li>
-            <li><a href="#">Switch</a></li>
-          </ul>
-        </div>
+      <h1 id="alias">MyAlias</h1>
+      <p id="username">User Name</p>
+      <p id="userUniversity">My University </p>
+      <p id="location">My (Location) </p> <br>
+      <input aria-label="Profile" type="submit" value="Profile">
+      <input aria-label="EditProfile" type="submit" value="Edit Profile">
+      <div class="display_flex jus_center">
+        <table id="userTable">
+          <thead>
+            <tr>
+              <th>Clasification</th>
+              <th>Points</th>
+              <th>Resolved</th>
+              <th>Aproved</th>
+              <th>Sent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </fieldset>
+    <fieldset id="userPicture">
+      <img src="../img/logo.png" alt="User picture">
     </fieldset>
   </main>
 

@@ -1,3 +1,7 @@
+p {
+  margin: 0px;
+}
+
 .banner {
   display: flex;
   align-items: center;
@@ -10,6 +14,49 @@
 .banner img {
   max-width: 180px;
   height: auto;
+}
+
+main fieldset {
+  margin-left: 100px;
+  width: calc(50%-250px);
+  height: auto;
+  display: inline-block;
+}
+
+#userPicture img {
+  max-width: 190px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#userTable {
+  margin: 10px;
+  border: 1px solid #526176;
+  background-color: #f7c331;
+  text-align: center;
+  color: #2a2f37;
+}
+#userTable thead {
+  background-color: #f7882f;
+}
+#userTable thead tr {
+  padding: 10px;
+  border: 1px solid #526176;
+}
+#userTable thead tr th {
+  border: 1px solid #526176;
+}
+#userTable tbody {
+  margin: 5px;
+  border: 1px solid #526176;
+}
+#userTable tbody td {
+  border: 1px solid #526176;
+  padding: 5px;
+}
+#userTable tbody td img {
+  width: 50px;
 }
 
 /*# sourceMappingURL=profile.css.map */
