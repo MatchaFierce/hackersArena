@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en"> <!-- FIXME no hay necesidad de usar clases para js -->
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Hacker's Arena - Leaderboards </title>
-  <meta name="description" content="">
+  <meta name="description" content=""> <!-- FIXME si se van a poner meta tags deben tener contenido -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
@@ -24,9 +24,9 @@
 
   <!-- Add your site or application content here -->
   <header class="header">
-    <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
+    <div id="navbar" class="navbar display_flex al_start row jus_around w_100"> <!-- FIXME deberia ser un nav -->
       <img id="logo_img" class="navbar" src="../img/logo-50x40.png" alt="Logo">
-      <a id="inicio" href="../index.html" class="navbar"> Inicio </a>
+      <a id="inicio" href="../index.html" class="navbar"> Inicio </a> <!-- FIXME en lugar de repetir la clase en cada elemento podrian hacer el css especifico par alos hijos de cierto contenedor o clase -->
       <a id="problems" href="./problems.html" class="navbar"> Problems </a>
       <a id="leaderboards" href="#" class="navbar"> Leaderboards </a>
       <a id="login" href="./login.html" class="navbar">Login</a>
@@ -34,9 +34,9 @@
   </header>
 
   <main>
-    <aside>
+    <aside> <!-- FIXME no es un comun que un aside este dentro de un main -->
       <div>
-        <h2 id= userName > <a href="profile.html"> User </a> </h2>
+        <h2 id= userName > <a href="profile.html"> User </a> </h2> <!-- FIXME el anchor deberia wrappear el encabezado y no al reves -->
         <img id="logoimg" src="../img/logo.png" alt="">
         <table id="tableUser">
           <thead>
