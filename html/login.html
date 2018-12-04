@@ -34,13 +34,13 @@
   </header>
 
   <section class="container"> <!-- FIXME deberia ser un section -->
-  <form action="#">
+  <form action="https://hackersarena00.appspot.com/users/login/" method="post" id="login">
     <div class="row">
       <div class="col-25">
-        <label for="email">Email</label>
+        <label for="alias">Alias</label>
       </div>
       <div class="col-75">
-        <input type="email" id="email" name="email" placeholder="Your email">
+        <input type="text" id="alias" name="alias" placeholder="Your alias">
       </div>
     </div>
     <div class="row">
@@ -53,15 +53,15 @@
     </div>
     <br />
     <div class="row">
-      <input aria-label="submit button" type="submit" value="Submit"> <!-- FIXME este deberia ser un boton y no un input -->
+      <button class="submit-bttn" aria-label="submit-button" type="submit" form="login" value="Submit">Submit</button>
     </div>
   </form>
 </div>
   <div id="signup">
     Don't have an account?
-    <form action="./signup.html">
-      <input aria-label="Signup button" id="signup_bttn" type="submit" value="Sign up" />
-    </form>
+    <a href="./signup.html" aria-label="signup button">
+      <button class="submit_bttn">Sign up</button>
+    </a>
   </div>
   <br />
   <br />
