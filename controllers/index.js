@@ -1,1 +1,0 @@
-exports.CtrlUsers = require('./user');
