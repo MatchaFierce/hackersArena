@@ -1,21 +1,15 @@
-// Utilities
-@import "utilities/variables";
-@import "utilities/mixins";
-@import "utilities/flexbox";
-
-
-@font-face {
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-}
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-}
+$page-color: #f9f5f0;
+$page-text-color: #000;
+$primary-color: #a9a9a9;
+$darker-color: #6b7a8f;
+$medium-color: #f7882f;
+$mediuml-color: #f7c331;
+$light-color: #526176;
+$secondary-color: #caebf2;
+$form-background-color: #dcc7aa;
+$primary-button-color: #f7882f;
+$primary-button-color-hover: #b30000;
+$navbar-textcolor: #051429;
 
 p {
   margin: 0px;
