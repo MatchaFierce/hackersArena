@@ -74,7 +74,7 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+.submit-bttn {
   background-color: $primary-button-color;
   color: white;
   padding: 12px 20px;
@@ -84,7 +84,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+.submit-bttn:hover {
   background-color: #45a049;
 }
 
