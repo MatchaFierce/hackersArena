@@ -11,10 +11,11 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/leaderboards.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,19 +25,24 @@
 
   <!-- Add your site or application content here -->
   <header class="header">
-    <div id="navbar" class="navbar display_flex al_start row jus_around w_100"> <!-- FIXME deberia ser un nav -->
-      <img id="logo_img" class="navbar" src="../img/logo-50x40.png" alt="Logo">
-      <a id="inicio" href="../index.html" class="navbar"> Inicio </a> <!-- FIXME en lugar de repetir la clase en cada elemento podrian hacer el css especifico par alos hijos de cierto contenedor o clase -->
-      <a id="problems" href="./problems.html" class="navbar"> Problems </a>
-      <a id="leaderboards" href="#" class="navbar"> Leaderboards </a>
-      <a id="login" href="./login.html" class="navbar">Login</a>
-    </div>
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./problems.html">Problems</a></li>
+          <li><a href="./leaderboards.html">Leaderboards</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
     <aside> <!-- FIXME no es un comun que un aside este dentro de un main -->
       <div>
-        <h2 id= userName > <a href="profile.html"> User </a> </h2> <!-- FIXME el anchor deberia wrappear el encabezado y no al reves -->
+        <a href="profile.html"><h2 id="userName">User</h2></a>
         <img id="logoimg" src="../img/logo.png" alt="">
         <table id="tableUser">
           <thead>
@@ -57,31 +63,33 @@
       </div>
     </aside>
 
-    <div class="display_flex jus_center">
-      <table id="leaderboard">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Alias</th>
-            <th>Country</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>MatchaFierce</td>
-            <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
-            <td>Mil8Mil</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Franco1010</td>
-            <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
-            <td>+8000</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="jus_center">
+      <fieldset>
+        <table id="leaderboard">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Alias</th>
+              <th>Country</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>MatchaFierce</td>
+              <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
+              <td>Mil8Mil</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Franco1010</td>
+              <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
+              <td>+8000</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
     </div>
   </main>
 
@@ -93,9 +101,8 @@
       <img id="facebook-icon" src="../img/fb_icon.png" alt="Facebook logo">
     </a>
   </footer>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/leaderboards.js"></script>
 </body>
 
 </html>
