@@ -25,30 +25,30 @@
 
   <!-- Add your site or application content here -->
   <header class="header">
-    <div id="navbar" class="collapsible-navbar">
+    <nav id="navbar" class="collapsible-navbar">
       <input type="checkbox" id="menu">
       <label for="menu"><i class="fas fa-bars"></i> Menu</label>
       <div class="navbar-content">
         <ul>
-          <li><a id="inicio" href="../index.html" class="navbar">Inicio</a></li>
-          <li><a id="problems" href="./problems.html" class="navbar">Problems</a></li>
-          <li><a id="leaderboards" href="./leaderboards.html" class="navbar">Leaderboards</a></li>
-          <li><a id="login" href="#" class="navbar">Login</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./problems.html">Problems</a></li>
+          <li><a href="./leaderboards.html">Leaderboards</a></li>
+          <li><a href="./login.html">Login</a></li>
         </ul>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <section class="container">
-    <form action="#">
-      <div class="row">
-        <div class="col-25">
-          <label for="email">Email</label>
-        </div>
-        <div class="col-75">
-          <input type="email" id="email" name="email" placeholder="Your email">
-        </div>
+  <section class="container"> <!-- FIXME deberia ser un section -->
+  <form action="https://hackersarena00.appspot.com/users/login/" method="post" id="login">
+    <div class="row">
+      <div class="col-25">
+        <label for="alias">Alias</label>
       </div>
+      <div class="col-75">
+        <input type="text" id="alias" name="alias" placeholder="Your alias">
+      </div>
+    </div>
       <div class="row">
         <div class="col-25">
           <label for="password">Password</label>
@@ -61,13 +61,18 @@
       <div class="row">
         <input aria-label="submit button" type="submit" value="Submit"> <!-- FIXME este deberia ser un boton y no un input -->
       </div>
-    </form>
+    </div>
+    <br />
+    <div class="row">
+      <button class="submit-bttn" aria-label="submit-button" type="submit" form="login" value="Submit">Submit</button>
+    </div>
+  </form>
 </div>
   <div id="signup">
     Don't have an account?
-    <form action="./signup.html">
-      <input aria-label="Signup button" id="signup_bttn" type="submit" value="Sign up" />
-    </form>
+    <a href="./signup.html" aria-label="signup button">
+      <button class="submit_bttn">Sign up</button>
+    </a>
   </div>
   <br />
   <br />
