@@ -11,10 +11,11 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/login.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,44 +25,54 @@
 
   <!-- Add your site or application content here -->
   <header class="header">
-    <div id="navbar" class="navbar display_flex al_start row jus_around w_100">
-      <img id="logo_img" class="navbar" src="../img/logo-50x40.png" alt="Logo">
-      <a id="inicio" href="../index.html" class="navbar"> Inicio </a>
-      <a id="problems" href="./problems.html" class="navbar"> Problems </a>
-      <a id="leaderboards" href="./leaderboards.html" class="navbar"> Leaderboards </a>
-      <a id="login" href="./login.html" class="navbar">Login</a>
-    </div>
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./problems.html">Problems</a></li>
+          <li><a href="./leaderboards.html">Leaderboards</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <section class="container"> <!-- FIXME deberia ser un section -->
-  <form action="#">
+  <form action="https://hackersarena00.appspot.com/users/login/" method="post" id="login">
     <div class="row">
       <div class="col-25">
-        <label for="email">Email</label>
+        <label for="alias">Alias</label>
       </div>
       <div class="col-75">
-        <input type="email" id="email" name="email" placeholder="Your email">
+        <input type="text" id="alias" name="alias" placeholder="Your alias">
       </div>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="password">Password</label>
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password" name="password" placeholder="Your password..">
+        </div>
       </div>
-      <div class="col-75">
-        <input type="password" id="password" name="password" placeholder="Your password..">
+      <br />
+      <div class="row">
+        <input aria-label="submit button" type="submit" value="Submit"> <!-- FIXME este deberia ser un boton y no un input -->
       </div>
     </div>
     <br />
     <div class="row">
-      <input aria-label="submit button" type="submit" value="Submit"> <!-- FIXME este deberia ser un boton y no un input -->
+      <button class="submit-bttn" aria-label="submit-button" type="submit" form="login" value="Submit">Submit</button>
     </div>
   </form>
 </div>
   <div id="signup">
     Don't have an account?
-    <form action="./signup.html">
-      <input aria-label="Signup button" id="signup_bttn" type="submit" value="Sign up" />
-    </form>
+    <a href="./signup.html" aria-label="signup button">
+      <button class="submit_bttn">Sign up</button>
+    </a>
   </div>
   <br />
   <br />
@@ -69,14 +80,13 @@
     <p id="forgot_password"><strong><em>Forgot your password?</em></strong></p>
   </div>
   <br />
-  <div class="footer"> <!-- FIXME debeia ser una etiqueta footer -->
+  <footer class="footer">
     <a href="https://www.facebook.com/michelletorres.mx/">
       <img id="facebook-icon" src="../img/fb_icon.png" alt="">
     </a>
-  </div>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  </footer>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/login.js"></script>
 </body>
 
 </html>
