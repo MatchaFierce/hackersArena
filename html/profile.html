@@ -15,10 +15,11 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/slider.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="obtenerDatos()">
   <header class="header">
     <nav id="navbar" class="collapsible-navbar">
       <input type="checkbox" id="menu">
@@ -32,45 +33,53 @@
         </ul>
       </div>
     </nav>
-  </header>
 
-  <br>
+    <div id="slider">
+      <ul id="slideWrap">
+        <li><img src="http://www.marcinpiecha.com/img/banner.png" alt="Coding1"></li>
+        <li><img src="http://www.jackrussellsoftware.com/wp-content/uploads/2014/08/code_banner.jpg" alt="Coding2" /></li>
+        <li><img src="https://solidgeargroup.com/wp-content/uploads/2016/08/technology-1283624_770.jpg" alt="Coding3"></li>
+      </ul>
+      <a id="prev" href="#">&#8810;</a>
+      <a id="next" href="#">&#8811;</a>
+    </div>
 
-  <main>
-    <div class="banner">
-      <img class="logoimg" src="../img/logo.png" alt="">
+    <div class="content display_flex">
       <h1>Welcome to Hacker's Arena.</h1>
       <br>
     </div>
+  </header>
 
-    <aside>
-      <div>
-        <h2 id="userName" > <a href="profile.html"> User </a> </h2>
-        <img class="logoimg" src="../img/logo.png" alt="">
-        <table id="tableUser">
-          <thead>
-            <tr>
-              <th>Clasification</th>
-              <th>Points</th>
-              <th>Resolved</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id=userClasification>0</td>
-              <td id=userPoints>0</td>
-              <td id=userResolved>0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </aside>
+  <aside>
+    <div>
+      <h2 id="userName" > <a href="profile.html"> User </a> </h2>
+      <img class="logoimg" src="../img/logo.png" alt="">
+      <table id="tableUser">
+        <thead>
+          <tr>
+            <th>Clasification</th>
+            <th>Points</th>
+            <th>Resolved</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id=userClasification>0</td>
+            <td id=userPoints>0</td>
+            <td id=userResolved>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+
+  <br>
 
     <fieldset>
-      <h1 id="alias">MyAlias</h1>
-      <p id="username">User Name</p>
-      <p id="userUniversity">My University </p>
-      <p id="location">My (Location) </p> <br>
+      <h1><span id="alias"></span> </h1>
+      <span id = "nombre"></span> <br>
+      <span id = "university"></span> <br>
+      <span id = "country"></span> <br>
       <input aria-label="Profile" type="submit" value="Profile">
       <input aria-label="EditProfile" type="submit" value="Edit Profile">
       <div class="display_flex jus_center">
@@ -110,7 +119,7 @@
     </a>
   </footer>
   <script src="../js/plugins.js"></script>
-  <script src="../js/profile.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
