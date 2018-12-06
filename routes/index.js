@@ -1,9 +1,49 @@
 const { Router } = require('express');
-const usersRoute = require('./users');
-
+const path = require('path');
 
 const router = Router();
-router.use('/users', usersRoute);
+
+
+/* Router initialization */
+// const categoriesRouter = require('./categories');
+// const contestsRouter = require('./contests');
+// const countriesRouter = require('./countries');
+// const languagesRouter = require('./languages');
+// const problemsRouter = require('./problems');
+// const solutionsRouter = require('./solutions');
+// const universitiesRouter = require('./universities');
+const usersRouter = require('./users');
+// const verdictsRouter = require('./verdicts');
+// const authRouter = require('./auth');
+// const mailer = require('../mail');
+// const rolesRouter = require('./roles');
+// const allowsRouter = require('./allows');
+// const userRolesRouter = require('./userroles');
+// const roleAllowsRouter = require('./roleallows');
+// const driveRouter = require('./drive');
+// const judgeRouter = require('./judge');
+
+router.get('/', (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, '../app/index.html'));
+});
+
+/* Router association */
+// router.use('/categories', categoriesRouter);
+// router.use('/contests', contestsRouter);
+// router.use('/countries', countriesRouter);
+// router.use('/languages', languagesRouter);
+// router.use('/problems', problemsRouter);
+// router.use('/solutions', solutionsRouter);
+router.use('/users', usersRouter);
+// router.use('/universities', universitiesRouter);
+// router.use('/verdicts', verdictsRouter);
+// router.use('/roles', rolesRouter);
+// router.use('/allows', allowsRouter);
+// router.use('/userroles', userRolesRouter);
+// router.use('/roleallows', roleAllowsRouter);
+// router.use('/judge', judgeRouter);
+// router.use('/drive', driveRouter);
+// router.use('/', authRouter);
 
 
 module.exports = router;

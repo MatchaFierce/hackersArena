@@ -1,6 +1,13 @@
 const { Router } = require('express');
-const { CtrlUser } = require('../controllers');
+// const { UserCtrl } = require('../controllers');
+
 const router = Router();
 
-router.post('/login', CtrlUser.login);
-router.post('/register', CtrlUser.register);
+
+router.get('/');
+// router.get('/', UserCtrl.get);
+router.post('/login');
+// router.post('/register', UserCtrl.register);
+
+
+module.exports = router;

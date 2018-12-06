@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Hacker's Arena - Login </title>
+  <title>Hacker's Arena </title>
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
@@ -13,11 +14,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/signup.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
   <header class="header">
     <nav id="navbar" class="collapsible-navbar">
       <input type="checkbox" id="menu">
@@ -33,49 +39,41 @@
     </nav>
   </header>
 
-  <section class="container">
-    <form action="#">
-      <div class="row">
-        <div class="col-25">
-          <label for="email">Email</label>
-        </div>
-        <div class="col-75">
-          <input type="email" id="email" name="email" placeholder="Your email">
-        </div>
+
+  <div class="container">
+  <form action="#">
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
       </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="password">Password</label>
-        </div>
-        <div class="col-75">
-          <input type="password" id="password" name="password" placeholder="Your password..">
-        </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email">
       </div>
-      <br />
-      <div class="row">
-        <input aria-label="submit button" type="submit" value="Submit"> <!-- FIXME este deberia ser un boton y no un input -->
-      </div>
-    </form>
+    </div>
+    <br />
+    <div class="row">
+      <input aria-label="submit button" type="submit" value="Submit">
+    </div>
+  </form>
 </div>
-  <div id="signup">
-    Don't have an account?
-    <form action="./signup.html">
-      <input aria-label="Signup button" id="signup_bttn" type="submit" value="Sign up" />
+  <div id="login">
+    Remembered your password?
+    <form action="./login.html">
+      <input aria-label="Login button" id="login_bttn" type="submit" value="Login" />
     </form>
   </div>
   <br />
   <br />
-  <div id="password_recovery">
-    <p id="forgot_password"><strong><em>Forgot your password?</em></strong></p>
-  </div>
-  <br />
+
   <footer class="footer">
     <a href="https://www.facebook.com/michelletorres.mx/">
       <img id="facebook-icon" src="../img/fb_icon.png" alt="">
     </a>
   </footer>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="../js/plugins.js"></script>
-  <script src="../js/login.js"></script>
+  <script src="../js/signup.js"></script>
 </body>
 
 </html>

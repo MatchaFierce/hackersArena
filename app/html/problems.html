@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en"> <!-- FIXME no hay necesidad de usar clases para js -->
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Hacker's Arena - Leaderboards </title>
-  <meta name="description" content=""> <!-- FIXME si se van a poner meta tags deben tener contenido -->
+  <title>Hacker's Arena - Problems </title>
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/leaderboards.css">
+  <link rel="stylesheet" href="../css/problems.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
@@ -40,9 +40,9 @@
   </header>
 
   <main>
-    <aside> <!-- FIXME no es un comun que un aside este dentro de un main -->
+    <aside>
       <div>
-        <a href="profile.html"><h2 id="userName">User</h2></a>
+        <h2 id= userName > <a href="profile.html"> User </a> </h2>
         <img id="logoimg" src="../img/logo.png" alt="">
         <table id="tableUser">
           <thead>
@@ -63,34 +63,24 @@
       </div>
     </aside>
 
-    <div class="jus_center">
-      <fieldset>
-        <table id="leaderboard">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Alias</th>
-              <th>Country</th>
-              <th>Score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>MatchaFierce</td>
-              <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
-              <td>Mil8Mil</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Franco1010</td>
-              <td><img src="../img/flags/52.png" alt="Flag of Mexico"></td>
-              <td>+8000</td>
-            </tr>
-          </tbody>
-        </table>
-      </fieldset>
-    </div>
+    <fieldset>  <!-- FIXME los fieldset estan especificados para formularios -->
+      <div>
+        <div id="slogan_container" class="display_flex">
+          <h1>Ready to Rumble?</h1>
+          <img src="../img/boxing_gloves.png" alt="Boxing gloves">
+        </div>
+        <div>
+          <h2>Round 1</h2>
+          <ul>
+            <li><a href="./problems/1001.html">1000 - A+B Problem</a></li>
+            <li><a href="./problems/1002.html">Pipes</a></li>
+            <li><a href="./problems/1003.html">New House</a></li>
+            <li><a href="./problems/1004.html">General Election</a></li>
+            <li><a href="./problems/1005.html">Traversing Grid</a></li>
+          </ul>
+        </div>
+      </div>
+    </fieldset>
   </main>
 
   <footer class="footer">
@@ -101,7 +91,8 @@
       <img id="facebook-icon" src="../img/fb_icon.png" alt="Facebook logo">
     </a>
   </footer>
-  <script src="../js/leaderboards.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/problems.js"></script>
 </body>
 
 </html>
