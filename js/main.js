@@ -1,16 +1,12 @@
-var misCabeceras = new Headers();
-
-var miInit = { method: 'GET',
-               headers: misCabeceras,
-               mode: 'cors',
-               cache: 'default' };
-
 function obtenerDatos(){
-  fetch("https://hackersarena00.appspot.com/users",miInit)
-  .then(function(response) {
-    return response.json();
-  }).then(function(respuesta) {
-    var nombre = document.getElementById('nombre');
-    nombre.innerHTML = response.name;
-  })
-}
+ fetch("https://hackersarena00.appspot.com/users")
+ .then(function(response) {
+   return response;
+ }).then(function(response) {
+   //console.log(response.text());
+   var data = response.json();
+   console.log(data);
+   nombre.innerHTML = data.promiseValue.data[0].alias;
+ //  console.log(data);
+   //nombre.innerHTML = data;
+ });}
