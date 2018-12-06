@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/leaderboards.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="../problems.html">Problems</a></li>
+          <li><a href="../leaderboards.html">Leaderboards</a></li>
+          <li><a href="../login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>New House</h1>
+    <p><strong>Description</strong></p>
+    <pre>Johan wants to build a new house and he wants his house as large as it can.
+Given an N x N grid land, find the largest square size that fit in the free area.</pre>
+    <p><strong>Input specification</strong></p>
+    <pre>The first line of input contains an integer T (1 <= T <= 100), the number of test cases follow. Each test case starts with an integer N <= 10 denoting the size of the grid land. The next N lines each contains N characters. Each character be either '.' (free area) or '#' (obstacle). Your house should be build on free area</pre>
+    <p><strong>Output specification</strong></p>
+    <pre>For each test case, output in a line the size of the largest square on free area. </pre>
+    <p><strong>Sample input</strong></p>
+    <pre>2
+10
+..........
+.#####....
+..#..###..
+...##.....
+...#..#...
+...#...###
+....######
+..........
+##########
+#########.
+5
+##..#
+....#
+.#..#
+####.
+.#..#</pre>
+    <p><strong>Sample output</strong></p>
+    <pre>3
+2</pre>
+  </main>
+
+  <footer class="footer">
+    <p>© 2018 - Hacker's Arena</p>
+    <a> Políticas de Privacidad </a>
+    <br />
+    <a href=""> <!-- FIXME los anchors deben tener siempre un link -->
+      <img id="facebook-icon" src="../img/fb_icon.png" alt="Facebook logo">
+    </a>
+  </footer>
+</body>
+</html>

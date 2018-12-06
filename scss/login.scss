@@ -73,7 +73,7 @@
     display: inline-block;
   }
 
-  input[type=submit] {
+  .submit-bttn {
     background-color: $primary-button-color;
     color: white;
     padding: 12px 20px;
@@ -83,7 +83,7 @@
     float: right;
   }
 
-  input[type=submit]:hover {
+  .submit-bttn:hover {
     background-color: $primary-button-color-hover;
   }
 

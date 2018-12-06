@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/leaderboards.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="../problems.html">Problems</a></li>
+          <li><a href="../leaderboards.html">Leaderboards</a></li>
+          <li><a href="../login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>General Election</h1>
+    <p><strong>Description</strong></p>
+    <pre>General Election is over, now it is time to count the votes! There are n (2 <= n <= 5) candidates and m (1 <= m <= 100) vote regions. Given the number of votes for each candidate from each region, determine which candidate is the winner (one with the most votes).</pre>
+    <p><strong>Input specification</strong></p>
+    <pre>The first line of input contains an integer T (1 <= T <= 100), the number of test cases follow. Each test case starts with two integers n and m denoting the number of candidate and number of region. The next m lines each contains n integers, V1, V2, ..., Vn (0 <= Vi <= 1000) the number of votes for candidate i.</pre>
+    <p><strong>Output specification</strong></p>
+    <pre>For each test case, output in a line the winning candidate. You may safely assume that the winner is unique.</pre>
+    <p><strong>Sample input</strong></p>
+    <pre>2
+3 3
+159 213 450
+512 890 993
+215 420 397
+2 5
+40 64
+35 12
+102 58
+43 15
+79 41</pre>
+    <p><strong>Sample output</strong></p>
+    <pre>3
+1</pre>
+  </main>
+
+  <footer class="footer">
+    <p>© 2018 - Hacker's Arena</p>
+    <a> Políticas de Privacidad </a>
+    <br />
+    <a href=""> <!-- FIXME los anchors deben tener siempre un link -->
+      <img id="facebook-icon" src="../img/fb_icon.png" alt="Facebook logo">
+    </a>
+  </footer>
+</body>
+</html>

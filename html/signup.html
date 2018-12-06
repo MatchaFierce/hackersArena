@@ -41,13 +41,61 @@
 
 
   <div class="container">
-  <form action="#">
+  <form action="https://hackersarena00.appspot.com/users/" method="post" id="signup">
+    <div class="row">
+      <div class="col-25">
+        <label for="alias">Alias</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="alias" name="alias" placeholder="Your alias">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lastName">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lastName" name="lastName" placeholder="Your last name">
+      </div>
+    </div>
     <div class="row">
       <div class="col-25">
         <label for="email">Email</label>
       </div>
       <div class="col-75">
         <input type="email" id="email" name="email" placeholder="Your email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="password" name="password" placeholder="Your password">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="idUniversity">University id</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="idUniversity" name="idUniversity" placeholder="Your university id">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="idUniversity">Country id</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="idCountry" name="idCountry" placeholder="Your country id">
       </div>
     </div>
     <br />
@@ -57,10 +105,7 @@
   </form>
 </div>
   <div id="login">
-    Remembered your password?
-    <form action="./login.html">
-      <input aria-label="Login button" id="login_bttn" type="submit" value="Login" />
-    </form>
+    <a aria-label="Login button" href="./login.html"><button class="submit_bttn" id="login_bttn">Submit</button></a>
   </div>
   <br />
   <br />
