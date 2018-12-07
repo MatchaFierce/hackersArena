@@ -3,21 +3,23 @@ function createNode(element) {
 }
 
 function obtenerDatos(){
- fetch("https://randomuser.me/api/?results=1")
- .then((resp) => resp.json())
+ fetch("https://hackersarena-224603.appspot.com/users")
+ .then((resp) => resp.json() )
  .then(function(data) {
-   let users = data.results;
+   let users;
+   
+   console.log(data);
+   console.log(users);
+   console.log(data.data);
+   users = data.data;
    return users.map(function(user){
      //let name = createNode('span');
-     console.log(users);
-     userPic.src = user.picture.large;
-     userName.innerHTML = `${user.name.first}`;
-     userAliasA.innerHTML = `${user.login.username}`;
-     userAlias.innerHTML = `${user.login.username}`;
-     userUniversity.innerHTML = `${user.location.city}`;
-     userCountry.innerHTML = `${user.location.state}`;
-     console.log(user.name.first);
-     console.log(userName);
+     console.log(user[0]);
+     userName.innerHTML = `${user[0].name}`;
+     userAliasA.innerHTML = `${user[0].alias}`;
+     userAlias.innerHTML = `${user[0].alias}`;
+     userUniversity.innerHTML = `${user[0].idUniversity}`;
+     userCountry.innerHTML = `${user[0].idCountry}`;
      return;
    })
  })
