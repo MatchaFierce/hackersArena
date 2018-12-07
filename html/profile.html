@@ -52,7 +52,7 @@
 
   <aside>
     <div>
-      <h2 id="userName" > <a href="profile.html"> User </a> </h2>
+      <h2 id="userAliasA" > <a href="profile.html"> User </a> </h2>
       <img class="logoimg" src="../img/logo.png" alt="">
       <table id="tableUser">
         <thead>
@@ -73,13 +73,12 @@
     </div>
   </aside>
 
-  <br>
-
-    <fieldset>
-      <h1><span id="alias"></span> </h1>
-      <span id = "nombre"></span> <br>
-      <span id = "university"></span> <br>
-      <span id = "country"></span> <br>
+  <main>
+    <div class="userData">
+      <h1> <span id="userAlias"></span> </h1>
+      <p> Name: <span id = "userName"> userName </span> </p>
+      <p> University: <span id = "userUniversity"></span> </p>
+      <p> Country: <span id = "userCountry"></span></p>
       <input aria-label="Profile" type="submit" value="Profile">
       <input aria-label="EditProfile" type="submit" value="Edit Profile">
       <div class="display_flex jus_center">
@@ -104,10 +103,10 @@
           </tbody>
         </table>
       </div>
-    </fieldset>
-    <fieldset id="userPicture">
-      <img src="../img/logo.png" alt="User picture">
-    </fieldset>
+    </div>
+    <div class="userPicture">
+      <img id=userPic alt="User picture">
+    </div>
   </main>
 
   <footer class="footer">

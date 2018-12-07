@@ -84,3 +84,30 @@ main fieldset{
     }
   }
 }
+
+
+.userData {
+  justify-content: center;
+  text-align: justify;
+  max-width:500px ;
+  height: auto;
+  margin: auto;
+}
+.userPicture {
+  div {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    background-color: $medium-color;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 50px;
+  }
+}
+main
+{
+  display: flex;
+  flex-wrap: wrap;
+}

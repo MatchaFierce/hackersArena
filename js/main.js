@@ -1,12 +1,27 @@
+function createNode(element) {
+  return document.createElement(element);
+}
+
 function obtenerDatos(){
- fetch("https://hackersarena00.appspot.com/users")
- .then(function(response) {
-   return response;
- }).then(function(response) {
-   //console.log(response.text());
-   var data = response.json();
-   console.log(data);
-   nombre.innerHTML = data.promiseValue.data[0].alias;
- //  console.log(data);
-   //nombre.innerHTML = data;
- });}
+ fetch("https://randomuser.me/api/?results=1")
+ .then((resp) => resp.json())
+ .then(function(data) {
+   let users = data.results;
+   return users.map(function(user){
+     //let name = createNode('span');
+     console.log(users);
+     userPic.src = user.picture.large;
+     userName.innerHTML = `${user.name.first}`;
+     userAliasA.innerHTML = `${user.login.username}`;
+     userAlias.innerHTML = `${user.login.username}`;
+     userUniversity.innerHTML = `${user.location.city}`;
+     userCountry.innerHTML = `${user.location.state}`;
+     console.log(user.name.first);
+     console.log(userName);
+     return;
+   })
+ })
+ .catch(function(error) {
+   console.log(error)
+ });
+}
