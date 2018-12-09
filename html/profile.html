@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
-<body onload="obtenerDatos()">
+<body onload="obtenerDatosUsuario()">
   <header class="header">
     <nav id="navbar" class="collapsible-navbar">
       <input type="checkbox" id="menu">
@@ -86,19 +86,17 @@
           <thead>
             <tr>
               <th>Clasification</th>
-              <th>Points</th>
-              <th>Resolved</th>
-              <th>Aproved</th>
-              <th>Sent</th>
+              <th>Solved</th>
+              <th>%AC</th>
+              <th>Tried</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td id="userCls">0</td>
+              <td id="userSlv">0</td>
+              <td id="userApr">0</td>
+              <td id="userTrd">0</td>
             </tr>
           </tbody>
         </table>
