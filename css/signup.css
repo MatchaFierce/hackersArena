@@ -195,6 +195,10 @@ form {
   margin: auto;
 }
 
+#test #descriptionProblem {
+  white-space: pre-line;
+}
+
 @font-face {
   font-family: "Oswald", sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -259,7 +263,7 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+.submit-bttn {
   background-color: #f7882f;
   color: white;
   padding: 12px 20px;
@@ -269,7 +273,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+.submit-bttn:hover {
   background-color: #45a049;
 }
 

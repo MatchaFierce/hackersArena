@@ -171,4 +171,8 @@ form {
   margin: auto;
 }
 
+#test #descriptionProblem {
+  white-space: pre-line;
+}
+
 /*# sourceMappingURL=main.css.map */

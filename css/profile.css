@@ -195,6 +195,10 @@ form {
   margin: auto;
 }
 
+#test #descriptionProblem {
+  white-space: pre-line;
+}
+
 @font-face {
   font-family: "Oswald", sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -266,6 +270,30 @@ main fieldset {
 }
 #userTable tbody td img {
   width: 50px;
+}
+
+.userData {
+  justify-content: center;
+  text-align: justify;
+  max-width: 500px;
+  height: auto;
+  margin: auto;
+}
+
+.userPicture div {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  background-color: #f7882f;
+}
+.userPicture img {
+  max-width: 100%;
+  margin: 50px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=profile.css.map */

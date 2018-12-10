@@ -1,12 +1,23 @@
-function obtenerDatos(){
- fetch("https://hackersarena00.appspot.com/users")
- .then(function(response) {
-   return response;
- }).then(function(response) {
-   //console.log(response.text());
-   var data = response.json();
-   console.log(data);
-   nombre.innerHTML = data.promiseValue.data[0].alias;
- //  console.log(data);
-   //nombre.innerHTML = data;
- });}
+const urlUser = 'https://hackersarena-224603.appspot.com/users/';
+const uu = 'Franco1010';
+
+function obtenerDatosUsuario() {
+  fetch(urlUser.concat(uu))
+    .then(resp => resp.json())
+    .then((data) => {
+      const user = data.data;
+      // console.log(user);
+      userName.innerHTML = `${user.name}`;
+      userAlias.innerHTML = `${user.alias}`;
+      userAliasA.innerHTML = userAlias.innerHTML;
+      userUniversity.innerHTML = `${user.university}`;
+      userCountry.innerHTML = `${user.country}`;
+      userPoints.innerHTML = `${user.score}`;
+      userResolved.innerHTML = `${user.score}`;
+      userTrd.innerHTML = userResolved.innerHTML;
+      return;
+    })
+    .catch((error) => {
+      console.log(error)
+    });
+}

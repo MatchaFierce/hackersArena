@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/slider.css">
   <link rel="stylesheet" href="../css/problems.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
@@ -52,7 +53,7 @@
 
   <aside>
     <div>
-      <h2 id= userName > <a href="profile.html"> User </a> </h2>
+      <h2 id= "userName" > <a href="profile.html"> User </a> </h2>
       <img id="logoimg" src="../img/logo.png" alt="">
       <table id="tableUser">
         <thead>
@@ -64,9 +65,9 @@
         </thead>
         <tbody>
           <tr>
-            <td id=userClasification>0</td>
-            <td id=userPoints>0</td>
-            <td id=userResolved>0</td>
+            <td id="userClasification">0</td>
+            <td id="userPoints">0</td>
+            <td id="userResolved">0</td>
           </tr>
         </tbody>
       </table>
@@ -75,10 +76,12 @@
 
   <main>
     <div class="solution">
-      <h2> Aritmetic Operations </h2>
-      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus posuere tincidunt. Sed interdum condimentum lacinia. Vestibulum risus erat, sollicitudin quis nulla eget, egestas tempor risus. Fusce sit amet dignissim elit. Nulla aliquet varius nulla sed porta. Praesent vestibulum velit vitae dui facilisis, eget gravida nunc ultricies. Curabitur id lacus convallis, tempor nibh ut, interdum lorem. Cras dignissim dapibus ligula, non faucibus velit elementum vel. Class aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam hendrerit id nunc quis feugiat. Sed sit amet erat vitae nunc dictum fringilla rutrum vitae nisi.
-        Vivamus ultricies sapien nisi. Sed viverra ex id ex scelerisque, a ullamcorper lorem dapibus. Fusce sem eros, mattis vitae metus cursus, vehicula sagittis tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet tristique erat. Nunc sollicitudin ligula scelerisque risus tincidunt pretium. Cras facilisis aliquet nulla. Duis sollicitudin magna turpis, ac scelerisque felis pretium eget. Nulla sit amet diam id neque hendrerit molestie. Donec ut urna mi. Cras venenatis ex eget nunc auctor porta. </p>
+      <h2> <span id="titleProblem"> </span></h2>
+      <p> <strong> Statistics: </strong> | Attempts: <span id="attempts"></span> | Solved: <span id="solved"></span> </p>
+      <p> <strong> Added by: </strong> <span id="aliasUser"></span> </p>
+      <p> <strong> Description: </strong> <span id="descriptionProblem" class="linebreak"></span> </p>
+      <p> <strong> Limits: </strong> | Time limit: <span id="timeLimit"></span> | Memory limit: <span id="memoryLimit"></span></p>
+      <p> <strong> Sample input: </strong> <br> <span id="test" class="linebreak"></span> </p>
         <br>
     </div>
 
@@ -87,7 +90,7 @@
       <input type="text" class="form-control" id="name" />
       <label for="solution">Pic the solution</label>
       <input type="file" multiple="multiple" id="solution" />
-      <button type="submit" class="btn">Send</button>
+      <button type="submit" class="btn" onclick="sendData()">Send</button>
       <button type="reset" class="btn">Cancel</button>
     </form>
   </main>
@@ -100,9 +103,8 @@
       <img id="facebook-icon" src="../img/fb_icon.png" alt="Facebook logo">
     </a>
   </footer>
-  <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="../js/problem.js"></script>
   <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
 </body>
 
 </html>

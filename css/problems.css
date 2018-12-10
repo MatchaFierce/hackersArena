@@ -195,6 +195,10 @@ form {
   margin: auto;
 }
 
+#test #descriptionProblem {
+  white-space: pre-line;
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -480,6 +484,9 @@ h3 {
 h3 {
     page-break-after: avoid;
   }
+}
+span {
+  white-space: pre-line;
 }
 
 /*# sourceMappingURL=problems.css.map */
