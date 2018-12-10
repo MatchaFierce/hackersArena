@@ -1,11 +1,13 @@
 const { Router } = require('express');
-const { UserCtrl } = require('../controllers');
+const { ProblemCtrl } = require('../controllers');
 
 const router = Router();
 
 
-// router.get('/');
-// router.get('/', UserCtrl.get);
+router.get('/', (req, res) => {
+  res.render('problems');
+});
+// router.get('/', );
 // router.post('/login', UserCtrl.login);
 // router.post('/register', UserCtrl.register);
 

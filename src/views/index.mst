@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Hacker's Arena - Home </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/slider.css">
+<!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> !-->
+</head>
+
+<body>
+  <header class="header">
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/problems">Problems</a></li>
+          <li><a href="/leaderboards">Leaderboards</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="slider">
+      <ul id="slideWrap">
+        <li><img src="http://www.marcinpiecha.com/img/banner.png" alt="Coding1"></li>
+        <li><img src="http://www.jackrussellsoftware.com/wp-content/uploads/2014/08/code_banner.jpg" alt="Coding2" /></li>
+        <li><img src="https://solidgeargroup.com/wp-content/uploads/2016/08/technology-1283624_770.jpg" alt="Coding3"></li>
+      </ul>
+      <a id="prev" href="#">&#8810;</a>
+      <a id="next" href="#">&#8811;</a>
+    </div>
+
+    <div class="content display_flex">
+      <h1>Welcome to Hacker's Arena.</h1>
+      <br>
+    </div>
+
+  </header>
+
+
+  <aside>
+    <div>
+      <h2 id="userName" > <a href="./html/profile.html"> User </a> </h2>
+      <img id="userPicture" src="./img/logo.png" alt="">
+      <table id="tableUser">
+        <thead>
+          <tr>
+            <th>Clasification</th>
+            <th>Points</th>
+            <th>Resolved</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id=userClasification>0</td>
+            <td id=userPoints>0</td>
+            <td id=userResolved>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+
+  <main>
+
+
+    <div class="contenido">
+      <img id="img1" src="./img/img1.jpg" alt="Coding image">
+
+      <p class="center">Compete with the best developers and challenge yourself!</p>
+      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus posuere tincidunt. Sed interdum condimentum lacinia. Vestibulum risus erat, sollicitudin quis nulla eget, egestas tempor risus. Fusce sit amet dignissim elit. Nulla aliquet varius nulla sed porta. Praesent vestibulum velit vitae dui facilisis, eget gravida nunc ultricies. Curabitur id lacus convallis, tempor nibh ut, interdum lorem. Cras dignissim dapibus ligula, non faucibus velit elementum vel. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam hendrerit id nunc quis feugiat. Sed sit amet erat vitae nunc dictum fringilla rutrum vitae nisi.
+        Vivamus ultricies sapien nisi. Sed viverra ex id ex scelerisque, a ullamcorper lorem dapibus. Fusce sem eros, mattis vitae metus cursus, vehicula sagittis tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet tristique erat. Nunc sollicitudin ligula scelerisque risus tincidunt pretium. Cras facilisis aliquet nulla. Duis sollicitudin magna turpis, ac scelerisque felis pretium eget. Nulla sit amet diam id neque hendrerit molestie. Donec ut urna mi. Cras venenatis ex eget nunc auctor porta. </p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2018 - Hacker's Arena</p>
+    <p> Políticas de Privacidad </p>
+    <a href=""> <!-- FIXME los anchors deben tener siempre un link -->
+      <img id="facebook-icon" src="./img/fb_icon.png" alt="Facebook logo">
+    </a>
+  </footer>
+  <script type="text/javascript" src="js/slider.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
