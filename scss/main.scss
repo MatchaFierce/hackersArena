@@ -27,8 +27,6 @@ body {
 }
 
 
-
-
   body {
     background-color: $page-color;
     color: $page-text-color!important;
@@ -170,4 +168,8 @@ form {
     height: auto;
     margin: auto;
   }
+}
+#test #descriptionProblem {
+    white-space: pre-line;
+  
 }

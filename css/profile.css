@@ -195,6 +195,10 @@ form {
   margin: auto;
 }
 
+#test #descriptionProblem {
+  white-space: pre-line;
+}
+
 @font-face {
   font-family: "Oswald", sans-serif;
   font-family: "Open Sans", sans-serif;
