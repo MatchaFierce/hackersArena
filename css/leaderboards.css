@@ -73,7 +73,7 @@ body {
 
 .footer {
   text-align: center;
-  color: #6b7a8f;
+  color: white;
 }
 
 .content {
@@ -247,7 +247,7 @@ body {
 
 .footer {
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .content {
@@ -284,7 +284,8 @@ body {
 
 #leaderboard {
   border: 1px solid black;
-  background-color: #caebf2;
+  background-color: #ede0ce;
+  /* #caebf2; */
   width: 100%;
 }
 #leaderboard thead {
@@ -316,6 +317,7 @@ fieldset {
 
 .divLeaderboard {
   margin: auto;
+  /* color: white; */
   max-width: 100%;
   height: auto;
 }
