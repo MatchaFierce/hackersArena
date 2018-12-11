@@ -26,13 +26,17 @@ app.engine('mst', mustacheExpress(path.join(__dirname, 'src/views/partials')));
 app.set('view engine', 'mst');
 app.set('views', path.join(__dirname, 'src/views'));
 
-
+// Routes
+app.use(router);
+router.get('/', (req, res) => {
+  // res.status(200).sendFile(path.join(__dirname, '../src/index.html'));
+  res.render('index');
+});
 // Static app loading
 app.use(express.static(path.join(__dirname, 'src'))); // Development
 // app.use(express.static(path.join(__dirname, 'public'))); // Production
 
-// Routes
-app.use(router);
+
 
 
 const PORT = process.env.PORT || '8080';

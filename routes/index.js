@@ -25,10 +25,6 @@ const usersRouter = require('./users');
 // const driveRouter = require('./drive');
 // const judgeRouter = require('./judge');
 
-router.get('/', (req, res) => {
-  // res.status(200).sendFile(path.join(__dirname, '../src/index.html'));
-  res.render('index');
-});
 
 router.get('/leaderboards', (req, res) => {
   res.render('leaderboards');

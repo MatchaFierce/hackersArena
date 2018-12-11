@@ -12,6 +12,9 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/register', (req, res) => {
+  res.render('register');
+});
 // User login
 // router.post('/login', AuthCtrl.login());
 

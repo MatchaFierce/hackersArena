@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Hacker's Arena - Login </title>
+  <meta name="description" content="An online judge for programmers">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header class="header">
+    {{> navbar }}
+  </header>
+
+  <section class="container">
+  <form action="https://hackersarena-224603.appspot.com/users/login/" method="post" id="login">
+    <div class="row">
+      <div class="col-25">
+        <label for="alias">Alias </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="alias" name="alias" placeholder="Your alias">
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password" name="password" placeholder="Your password..">
+        </div>
+      </div>
+      <br />
+    <br />
+    <div class="row">
+      <button class="submit-bttn" aria-label="submit-button" type="submit" form="login" value="Submit"> Submit</button>
+    </div>
+
+  </form>
+  <div id="signup">
+    Don't have an account?
+    <a href="./signup.html" aria-label="signup button">
+      <button class="submit_bttn">Sign up</button>
+    </a>
+  </div>
+  <br />
+  <br />
+  <div id="password_recovery">
+    <p id="forgot_password"><strong><em>Forgot your password?</em></strong></p>
+  </div>
+  <br />
+  <footer class="footer">
+    <a href="https://www.facebook.com/michelletorres.mx/">
+      <img id="facebook-icon" src="../img/fb_icon.png" alt="">
+    </a>
+  </footer>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/login.js"></script>
+</section>
+</body>
+
+</html>
