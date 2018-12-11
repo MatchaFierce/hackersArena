@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/leaderboards.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav id="navbar" class="collapsible-navbar">
+      <input type="checkbox" id="menu">
+      <label for="menu"><i class="fas fa-bars"></i> Menu</label>
+      <div class="navbar-content">
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="../problems.html">Problems</a></li>
+          <li><a href="../leaderboards.html">Leaderboards</a></li>
+          <li><a href="../login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>A+B Problem</h1>
+    <p><strong>Description</strong></p>
+    <p>For this problem you must calculate A + B, numbers given in the input.</p>
+    <p><strong>Input specification</strong></p>
+    <p>The only line of input contain two space separated integers A, B (0 <= A, B <= 10). </p>
+    <p><strong>Output specification</strong></p>
+    <p>The only line of output should contain one integer: the sum of A and B.</p>
+    <p><strong>Sample input</strong></p>
+    <p>1 2</p>
+    <p><strong>Sample output</strong></p>
+    <p>3</p>
+  </main>
+
+  <footer class="footer">
+    <p>© 2018 - Hacker's Arena</p>
+    <a> Políticas de Privacidad </a>
+    <br />
+    <a href="https://www.facebook.com/michelletorres.mx/">
+      <img id="facebook-icon" src="../../img/fb_icon.png" alt="Facebook logo">
+    </a>
+  </footer>
+</body>
+</html>

@@ -31,7 +31,7 @@
         <label for="alias">Alias</label>
       </div>
       <div class="col-75">
-        <input type="text" id="alias" name="user[alias]" placeholder="Your alias">
+        <input type="text" id="alias" name="alias" placeholder="Your alias">
       </div>
     </div>
     <div class="row">
@@ -39,7 +39,7 @@
         <label for="name">Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="name" name="user[name]" placeholder="Your name">
+        <input type="text" id="name" name="name" placeholder="Your name">
       </div>
     </div>
     <div class="row">
@@ -47,7 +47,7 @@
         <label for="lastName">Last Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lastName" name="user[lastName]" placeholder="Your last name">
+        <input type="text" id="lastName" name="lastName" placeholder="Your last name">
       </div>
     </div>
     <div class="row">
@@ -55,7 +55,7 @@
         <label for="email">Email</label>
       </div>
       <div class="col-75">
-        <input type="email" id="email" name="user[email]" placeholder="Your email">
+        <input type="email" id="email" name="email" placeholder="Your email">
       </div>
     </div>
     <div class="row">
@@ -63,7 +63,7 @@
         <label for="password">Password</label>
       </div>
       <div class="col-75">
-        <input type="password" id="password" name="user[password]" placeholder="Your password">
+        <input type="password" id="password" name="password" placeholder="Your password">
       </div>
     </div>
     <div class="row">
@@ -71,7 +71,7 @@
         <label for="idUniversity">University id</label>
       </div>
       <div class="col-75">
-        <input type="number" id="idUniversity" name="user[idUniversity]" placeholder="Your university id">
+        <input type="text" id="idUniversity" name="idUniversity" placeholder="Your university id">
       </div>
     </div>
     <div class="row">
@@ -79,12 +79,12 @@
         <label for="idUniversity">Country id</label>
       </div>
       <div class="col-75">
-        <input type="number" id="idCountry" name="user[idCountry]" placeholder="Your country id">
+        <input type="text" id="idCountry" name="idCountry" placeholder="Your country id">
       </div>
     </div>
     <br />
     <div class="row">
-      <input aria-label="submit button" type="submit" value="Submit">
+      <button class="submit-bttn" aria-label="submit-button" type="submit" form="signup" value="Submit">Submit</button>
     </div>
   </form>
 </div>

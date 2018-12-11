@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Hacker's Arena  - Problems </title>
-  <meta name="description" content="An online judge for programmers">
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
@@ -23,15 +23,7 @@
   <header class="header">
     {{> navbar }}
 
-    <div id="slider">
-      <ul id="slideWrap">
-        <li><img src="http://www.marcinpiecha.com/img/banner.png" alt="Coding1"></li>
-        <li><img src="http://www.jackrussellsoftware.com/wp-content/uploads/2014/08/code_banner.jpg" alt="Coding2" /></li>
-        <li><img src="https://solidgeargroup.com/wp-content/uploads/2016/08/technology-1283624_770.jpg" alt="Coding3"></li>
-      </ul>
-      <a id="prev" href="#">&#8810;</a>
-      <a id="next" href="#">&#8811;</a>
-    </div>
+    {{> slider }}
 
     <div class="content display_flex">
       <h1>Welcome to Hacker's Arena.</h1>
@@ -65,18 +57,26 @@
 
 
   <main>
-    <div>
-      <div id="slogan_container" class="display_flex">
+      <!-- <div id="slogan_container">
         <h1>Ready to Rumble?</h1>
         <img src="../img/boxing_gloves.png" alt="Boxing gloves">
+      </div> -->
+      <div class="divProblems">
+          <table id="problems">
+            <thead>
+              <tr>
+                <th width="70">ID</th>
+                <th width="700">Title</th>
+                <th width="70">Attempts</th>
+                <th width="70">Solved</th>
+                <th width="70">%AC</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyProblems">
+              <!-- Here goes the list of problems :3 -->
+            </tbody>
+          </table>
       </div>
-      <div>
-        <h2>Round 1</h2>
-        <ul id="ulProblems">
-          <!-- List of problems go here :3 -->
-        </ul>
-      </div>
-    </div>
   </main>
 
   <footer class="footer">

@@ -7,15 +7,18 @@ const router = Router();
 router.post('/register', AuthCtrl.register);
 
 
+router.get('/register', (req, res) => {
+  res.render('register');
+});
+
+
 // User login view
 router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/register', (req, res) => {
-  res.render('register');
-});
 // User login
-// router.post('/login', AuthCtrl.login());
+router.post('/login', AuthCtrl.login);
+
 
 module.exports = router;

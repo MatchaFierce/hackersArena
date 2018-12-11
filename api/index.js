@@ -1,4 +1,6 @@
 const axios = require('axios');
+const querystring = require('querystring');
+const { URLSearchParams } = require('url');
 
 class Api {
   constructor() {
@@ -17,14 +19,8 @@ class Api {
 
     this.post = async (url = '', body = {}, headers = {}) => {
       try {
-        const response = await axios.post(url, {
-          headers: {
-            ...headers,
-          },
-          body: {
-            ...body,
-          },
-        });
+        const response = await axios.post(url, querystring.stringify({ headers }),
+          querystring.stringify({ data: body }));
         return response.data;
       } catch (err) {
         throw err;
@@ -37,9 +33,7 @@ class Api {
           headers: {
             ...headers,
           },
-          body: {
-            ...body,
-          },
+          body: new URLSearchParams(body),
         });
         return response.data;
       } catch (err) {
