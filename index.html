@@ -79,10 +79,268 @@
     <div class="contenido">
       <img id="img1" src="./img/img1.jpg" alt="Coding image">
 
-      <p class="center">Compete with the best developers and challenge yourself!</p>
-      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus posuere tincidunt. Sed interdum condimentum lacinia. Vestibulum risus erat, sollicitudin quis nulla eget, egestas tempor risus. Fusce sit amet dignissim elit. Nulla aliquet varius nulla sed porta. Praesent vestibulum velit vitae dui facilisis, eget gravida nunc ultricies. Curabitur id lacus convallis, tempor nibh ut, interdum lorem. Cras dignissim dapibus ligula, non faucibus velit elementum vel. Class aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam hendrerit id nunc quis feugiat. Sed sit amet erat vitae nunc dictum fringilla rutrum vitae nisi.
-        Vivamus ultricies sapien nisi. Sed viverra ex id ex scelerisque, a ullamcorper lorem dapibus. Fusce sem eros, mattis vitae metus cursus, vehicula sagittis tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet tristique erat. Nunc sollicitudin ligula scelerisque risus tincidunt pretium. Cras facilisis aliquet nulla. Duis sollicitudin magna turpis, ac scelerisque felis pretium eget. Nulla sit amet diam id neque hendrerit molestie. Donec ut urna mi. Cras venenatis ex eget nunc auctor porta. </p>
+      <!-- <p class="center">Compete with the best developers and challenge yourself!</p> -->
+      <div class="tab-content">
+    <div id="io-tutorial">
+      <h2>Quick-Start Guide: using standard input and output</h2>
+      <p>
+        Kickstart encourages flexible problem-solving: we give you an input file and leave it to you
+        to solve the problem in the way you prefer. It is up to you to choose your language, development
+        environment, architecture, libraries, and so on.
+      </p><p>
+      Many of our contestants use a model common in other programming contests like ACM-ICPC and
+      Codeforces: a one-file program that reads the input and produces exactly the required output. This
+      tutorial demonstrates how to use standard input and standard output to apply this model to Kickstart
+      like a pro! Of course, you are still welcome to read input and/or write output in completely
+      different ways; this is just one option.
+    </p>
+
+      <h3>What are standard input and standard output?</h3>
+      <p>
+        The standard input (stdin) and standard output (stdout) are among the data streams that programs
+        use to interact with the outside world. When you are running a program from the console in the most
+        simple way, stdin is just what is read from the keyboard into the program, and stdout is what is
+        printed on the screen. However, these two streams can be directed to read to, and write from, files!
+      </p><p>
+      Suppose that you have a program called "my_program" that you usually run via the command:
+    </p>
+      <code-block >
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+        MY_PROGRAM
+      </ng-transclude>
+    </code>
+
+</div>
+</code-block><p>
+      Note that <code>MY_PROGRAM</code> could be something like <code>./my_binary</code> if using a
+      language like C++ that compiles to machine code, <code>java my_java_binary_name</code> for a
+      language like Java that uses virtual machines, or <code>python my_python_code.py</code> for a
+      language like Python that is interpreted rather than compiled.
+    </p><p>
+      In Linux, Mac OS/X and Windows, you can use &lt; and &gt; to redirect stdin and stdout to files,
+      respectively. So a command line like
+    </p>
+      <code-block ><!-- ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude><pre >MY_PROGRAM &lt; input_file.txt &gt; output_file.txt </pre></ng-transclude></code>
+
+</div>
+</code-block>
+      <p>
+        will make your program receive the contents of <code>input_file.txt</code> in its stdin, and write
+        the output to its stdout to <code>output_file.txt</code>.
+      </p>
+
+      <h3>How do I use stdin and stdout for Kickstart?</h3>
+      <p>
+        As you work on a solution, you may wish to read from a file (say, a <code>sample.txt</code> into
+        which you have
+        copied the problem's sample I/O), but still write the output to the console, to avoid having to
+        open or print the output file while you are debugging. You can do this with:
+      </p>
+      <code-block ><!-- ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude><pre > MY_PROGRAM &lt; sample.txt</pre></ng-transclude></code>
+
+</div>
+</code-block><p>
+      Once you have downloaded an input, you will want to direct your output to a file to upload:
+    </p>
+      <code-block ><!-- ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude><pre >MY_PROGRAM &lt; small_input.txt &gt; small_output.txt</pre></ng-transclude></code>
+
+</div>
+</code-block><p>
+      If your program's algorithm works for both the Small and Large datasets, you can just rerun this
+      command without even changing nor recompiling the program:
+    </p>
+      <code-block ><!-- ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude><pre > MY_PROGRAM &lt; large_input.txt &gt; large_output.txt </pre></ng-transclude></code>
+
+</div>
+</code-block>
+
+      <h3>How do I write my code to read from stdin and write to stdout?</h3>
+      <p>
+        Consider the following very simple problem. The input consists of one line with a number of test
+        cases <b>T</b>, and then <b>T</b> more lines, each of which contains two positive integers <b>N</b>
+        and <b>M</b>. The desired output form is <code>Case #x: y z</code>, where <code>x</code>,
+        <code>y</code>, and <code>z</code> are all integers; <code>x</code> is the case number
+        (starting from 1), <code>y</code> is the sum of <b>N</b> and <b>M</b>, and <code>z</code> is
+        the product of <b>N</b> and <b>M</b>.
+      </p>
+      <code-block header="'input_file.txt'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >input_file.txt</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre >3
+1 5
+7 -2
+9001 0
+</pre>
+      </ng-transclude></code>
+</div>
+</code-block><p>
+      Here's some code to solve this problem, reading from stdin and writing to stdout, in various
+      languages. For our examples, we use some of the most commonly used languages in Kickstart, but
+      you are certainly not limited to using just these!</p>
+      <code-block header="'C++ (commands)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >C++ (commands)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre >g++ solution.cpp -o solution
+./solution &lt; input_file.txt &gt; output_file.txt
+</pre>
+      </ng-transclude></code>
+
+</div>
+</code-block>
+      <code-block header="'C++ (solution.cpp)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >C++ (solution.cpp)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre >#include &lt;iostream&gt;  // includes cin to read from stdin and cout to write to stdout
+using namespace std;  // since cin and cout are both in namespace std, this saves some text
+int main() {
+  int t, n, m;
+  cin &gt;&gt; t;  // read t. cin knows that t is an int, so it reads it as such.
+  for (int i = 1; i &lt;= t; ++i) {
+    cin &gt;&gt; n &gt;&gt; m;  // read n and then m.
+    cout &lt;&lt; "Case #" &lt;&lt; i &lt;&lt; ": " &lt;&lt; (n + m) &lt;&lt; " " &lt;&lt; (n * m) &lt;&lt; endl;
+    // cout knows that n + m and n * m are ints, and prints them accordingly.
+    // It also knows "Case #", ": ", and " " are strings and that endl ends the line.
+  }
+
+  return 0;
+}</pre>
+      </ng-transclude></code>
+</div>
+</code-block>
+      <code-block header="'Java (commands)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >Java (commands)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre >javac Solution.java
+java Solution &lt; input_file.txt &gt; output_file.txt
+</pre>
+      </ng-transclude></code>
+</div>
+</code-block>
+      <code-block header="'Java (Solution.java)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >Java (Solution.java)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre >import java.util.*;
+import java.io.*;
+public class Solution {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+    int t = in.nextInt();  // Scanner has functions to read ints, longs, strings, chars, etc.
+    for (int i = 1; i &lt;= t; ++i) {
+      int n = in.nextInt();
+      int m = in.nextInt();
+      System.out.println("Case #" + i + ": " + (n + m) + " " + (n * m));
+    }
+  }
+}</pre>
+      </ng-transclude></code>
+</div>
+</code-block>
+      <code-block header="'Python 2 (commands)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >Python 2 (commands)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre >python2 solution.py &lt; input_file.txt &gt; output_file.txt
+</pre>
+      </ng-transclude></code>
+</div>
+</code-block>
+      <code-block header="'Python 2 (solution.py)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >Python 2 (solution.py)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre ># raw_input() reads a string with a line of input, stripping the '\n' (newline) at the end.
+# This is all you need for most Kickstart problems.
+t = int(raw_input())  # read a line with a single integer
+for i in xrange(1, t + 1):
+  n, m = [int(s) for s in raw_input().split(" ")]  # read a list of integers, 2 in this case
+  print "Case #{}: {} {}".format(i, n + m, n * m)
+  # check out .format's specification for more formatting options</pre>
+      </ng-transclude></code>
+</div>
+</code-block>
+      <code-block header="'Python 3 (commands)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >Python 3 (commands)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre >python3 solution.py &lt; input_file.txt &gt; output_file.txt
+</pre>
+      </ng-transclude></code>
+
+</div>
+</code-block>
+      <code-block header="'Python 3 (solution.py)'" ><!-- ngIf: $ctrl.header --><div layout="row" ng-if="$ctrl.header" md-colors="{background: 'tabTheme-background-100'}" layout-align="space-between center"  style="background-color: rgb(207, 216, 220); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <span flex="" >Python 3 (solution.py)</span>
+
+</div><!-- end ngIf: $ctrl.header -->
+<div layout="row" md-colors="{background: 'tabTheme-background-50'}" layout-align="space-between center"  style="background-color: rgb(236, 239, 241); color: rgba(0, 0, 0, 0.870588); background-position: initial initial; background-repeat: initial initial;">
+  <code flex="" >
+    <ng-transclude>
+    <pre ># input() reads a string with a line of input, stripping the '\n' (newline) at the end.
+# This is all you need for most Kickstart problems.
+t = int(input())  # read a line with a single integer
+for i in range(1, t + 1):
+  n, m = [int(s) for s in input().split(" ")]  # read a list of integers, 2 in this case
+  print("Case #{}: {} {}".format(i, n + m, n * m))
+  # check out .format's specification for more formatting options</pre>
+      </ng-transclude></code>
+
+</div>
+</code-block>
+      <p>
+        As you can see from these examples, most languages provide simple ways of reading from stdin and
+        writing to stdout. This is often easier than referring directly to particular files in your code
+        — you don't need to change or recompile your code when switching from the Small dataset to the
+        Large dataset, or when switching your output destination from the console (for debugging) to a file
+        (so you can submit).
+      </p><p>
+      You can always check the documentation of your favorite language to find the preferred way to
+      use stdin and stdout. Almost all languages have one.
+    </p>
+    </div>
+  </div>
     </div>
 
   </main>
