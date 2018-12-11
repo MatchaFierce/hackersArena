@@ -9,8 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/slider.css">
@@ -42,7 +40,7 @@
   <aside>
     <div>
       <h2 id="userName" > <a href="./html/profile.html"> User </a> </h2>
-      <img id="userPicture" src="./img/logo.png" alt="">
+      <img id="userPicture" src="../img/logo.png" alt="">
       <table id="tableUser">
         <thead>
           <tr>
@@ -66,7 +64,7 @@
 
 
     <div class="contenido">
-      <img id="img1" src="./img/img1.jpg" alt="Coding image">
+      <img id="img1" src="../img/img1.jpg" alt="Coding image">
 
       <!-- <p class="center">Compete with the best developers and challenge yourself!</p> -->
       <div class="tab-content">
