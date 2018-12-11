@@ -7,18 +7,19 @@ function append(parent, el) {
 }
 
 function setFlag(idCountry) {
-  let ruta;
-  if (idCountry == 1) {
-    ruta = '../img/flags/mx.png';
-  } else if (idCountry == 2) {
-    ruta = '../img/flags/us.png';
-  }
+  let ruta = '../img/flags/';
+  ruta += idCountry;
+  ruta += '.png';
   return ruta;
 }
 
 function sortByScore(users) {
   const users2 = users;
   users2.sort((a, b) => b.score - a.score);
+}
+
+function getUniversityNameById(id){
+
 }
 
 function obtenerDatos() {
@@ -28,7 +29,7 @@ function obtenerDatos() {
       const users = data.data;
       return users.map((user) => {
         // Creating all the cells and rows needed
-        sortByScore(user);
+        //sortByScore(user);
         const tabBody = document.getElementById('tbodyLeaderboards');
         // Passing data
         for (let i = 0; i < user.length; i++) {
@@ -37,24 +38,44 @@ function obtenerDatos() {
           const spanPos = createNode('span');
           const imgCnt = createNode('img');
           const spanSol = createNode('span');
+          const spanUni = createNode('span');
           const tdPos = createNode('td');
           const tdAli = createNode('td');
           const tdCnt = createNode('td');
           const tdSol = createNode('td');
+          const tdUni = createNode('td');
 
           spanAli.innerHTML = `${user[i].alias}`;
           spanPos.innerHTML = `${i + 1}`;
           imgCnt.src = setFlag(user[i].idCountry);
           spanSol.innerHTML = `${user[i].score}`;
+
+          let aux = undefined;
+          let route = 'https://hackersarena-224603.appspot.com/universities/';
+          route += user[i].idUniversity;
+          fetch(route)
+            .then(resp => resp.json())
+            .then((datau) => {
+              //console.log(datau.data.name);
+              let aux = datau.data.name;
+              spanUni.innerHTML = `${aux}`;
+            })
+            .catch((error) => {
+              console.log(error)
+            });
+
           // Appending items
           append(tdPos, spanPos);
           append(tdAli, spanAli);
-          append(tdCnt, imgCnt);
           append(tdSol, spanSol);
+          append(tdUni, spanUni);
+          append(tdCnt, imgCnt);
+
           append(trUser, tdPos);
           append(trUser, tdAli);
-          append(trUser, tdCnt);
           append(trUser, tdSol);
+          append(trUser, tdUni);
+          append(trUser, tdCnt);
           tabBody.appendChild(trUser);
         }
         return;
