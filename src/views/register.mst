@@ -25,7 +25,7 @@
 
 
   <div class="container">
-  <form action="/users" method="POST" id="signup">
+  <form action="/register" method="POST" id="signup">
     <div class="row">
       <div class="col-25">
         <label for="alias">Alias</label>

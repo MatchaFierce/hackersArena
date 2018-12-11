@@ -4,7 +4,7 @@ const { AuthCtrl } = require('../controllers');
 const router = Router();
 
 // User registration
-router.post('/users', AuthCtrl.register);
+router.post('/register', AuthCtrl.register);
 
 
 // User login view
