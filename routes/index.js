@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const { UserCtrl } = require('../controllers');
 // const path = require('path');
 
 const router = Router();
@@ -27,6 +28,10 @@ const usersRouter = require('./users');
 router.get('/', (req, res) => {
   // res.status(200).sendFile(path.join(__dirname, '../src/index.html'));
   res.render('index');
+});
+
+router.get('/leaderboards', (req, res) => {
+  res.render('leaderboards');
 });
 
 /* Router association */

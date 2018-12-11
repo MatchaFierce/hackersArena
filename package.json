@@ -18,12 +18,16 @@
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.0.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
@@ -38,14 +42,18 @@
     "gulp-sequence": "^1.0.0",
     "gulp-uglify": "^3.0.1",
     "mustache": "^3.0.1",
+    "node-sass": "^4.11.0",
     "nodemon": "^1.18.7",
     "postcss-preset-env": "^6.4.0",
-    "pump": "^3.0.0"
+    "pump": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "nodemon": "nodemon index.js"
+    "nodemon": "nodemon index.js",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

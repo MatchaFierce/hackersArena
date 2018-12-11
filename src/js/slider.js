@@ -1,58 +1,54 @@
+/* global window */
 /* global document */
-
-window.addEventListener('load', responsiveSlider, false);
 
 const responsiveSlider = () => {
   const slider = document.getElementById('slider');
   const sliderWidth = slider.offsetWidth;
   const slideList = document.getElementById('slideWrap');
-  const count = 1;
-  let items = slideList.querySelectorAll("li").length;
-  const prev = document.getElementById("prev");
-  let next = document.getElementById("next");
+  let count = 1;
+  const items = slideList.querySelectorAll('li').length;
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
 
   window.addEventListener('resize', () => {
     // sliderWidth = slider.offsetWidth;
   });
 
-  var prevSlide = function() {
-    if(count > 1) {
-      count = count - 2;
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-    else if(count = 1) {
+  const prevSlide = () => {
+    if (count > 1) {
+      count -= 2;
+      slideList.style.left = `-${count * sliderWidth}px`;
+      count += 1;
+    } else if (count === 1) {
       count = items - 1;
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
+      slideList.style.left = `-${count * sliderWidth}px`;
+      count += 1;
     }
   };
 
-  var nextSlide = function() {
-    if(count < items) {
-      slideList.style.left = "-" + count * sliderWidth + "px";
-      count++;
-    }
-    else if(count = items) {
-      slideList.style.left = "0px";
+  const nextSlide = () => {
+    if (count < items) {
+      slideList.style.left = `-${count * sliderWidth}px`;
+      count += 1;
+    } else if (count === items) {
+      slideList.style.left = '0px';
       count = 1;
     }
   };
 
-  next.addEventListener("click", function() {
+  next.addEventListener('click', () => {
     nextSlide();
   });
 
-  prev.addEventListener("click", function() {
+  prev.addEventListener('click', () => {
     prevSlide();
   });
 
-  setInterval(function() {
-    nextSlide()
+  setInterval(() => {
+    nextSlide();
   }, 8000);
-
 };
 
-window.onload = function() {
+window.onload = () => {
   responsiveSlider();
-}();
+};
