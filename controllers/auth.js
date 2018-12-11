@@ -5,7 +5,9 @@ class AuthCtrl {
   constructor() {
     this.register = async (req, res, next) => {
       try {
-        const { status, response } = await api.post(`${process.env.API_HOST}/users`, req.body.user);
+        const { status, response } = await api.post(`${process.env.API_HOST}/users`, req.body, {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        });
         if (status === 201) {
           res.send(response);
         }
