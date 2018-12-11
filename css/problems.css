@@ -315,7 +315,8 @@ span {
 #problems {
   margin: 10px;
   border: 1px solid #526176;
-  background-color: #f7c331;
+  background-color: #ede0ce;
+  /* #caebf2; */
   width: 100%;
   text-align: center;
   text-decoration: none;
