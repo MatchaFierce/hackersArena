@@ -67,15 +67,15 @@ function obtenerDatos() {
           // Appending items
           append(tdPos, spanPos);
           append(tdAli, spanAli);
-          append(tdSol, spanSol);
           append(tdUni, spanUni);
           append(tdCnt, imgCnt);
+          append(tdSol, spanSol);
 
           append(trUser, tdPos);
           append(trUser, tdAli);
-          append(trUser, tdSol);
           append(trUser, tdUni);
           append(trUser, tdCnt);
+          append(trUser, tdSol);
           tabBody.appendChild(trUser);
         }
         return;
