@@ -22,13 +22,21 @@ function getProblem() {
       descriptionProblem.innerHTML = `${problem.description}`;
       timeLimit.innerHTML = `${problem.timeLimit}`;
       memoryLimit.innerHTML = `${problem.memoryLimit}`;
-      test.innerHTML = `${problem.test}`;
+      createTxt(problem.test);
       console.log(test);
       return;
     })
     .catch((error) => {
       console.log(error)
     });
+}
+
+function createTxt(text) {
+  let txt = text;
+  // se genera y descarga el archivo
+  myLink = document.getElementById('link');
+  myLink.download = "testCases.txt";
+  myLink.href = 'data:text/plain;charset=utf-8,'+ encodeURIComponent(txt);
 }
 
 

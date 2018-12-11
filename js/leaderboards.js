@@ -43,7 +43,7 @@ function obtenerDatos() {
           const tdSol = createNode('td');
 
           spanAli.innerHTML = `${user[i].alias}`;
-          spanPos.innerHTML =`${i + 1}`;
+          spanPos.innerHTML = `${i + 1}`;
           imgCnt.src = setFlag(user[i].idCountry);
           spanSol.innerHTML = `${user[i].score}`;
           // Appending items

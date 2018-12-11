@@ -76,18 +76,26 @@
 
 
   <main>
-    <div>
-      <div id="slogan_container" class="display_flex">
+      <div id="slogan_container">
         <h1>Ready to Rumble?</h1>
         <img src="../img/boxing_gloves.png" alt="Boxing gloves">
       </div>
-      <div>
-        <h2>Round 1</h2>
-        <ul id="ulProblems">
-          <!-- List of problems go here :3 -->
-        </ul>
+      <div class="divProblems">
+          <table id="problems">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Attempts</th>
+                <th>Solved</th>
+                <th>%AC</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyProblems">
+              <!-- Here goes the list of problems :3 -->
+            </tbody>
+          </table>
       </div>
-    </div>
   </main>
 
   <footer class="footer">
