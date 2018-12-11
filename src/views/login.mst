@@ -51,7 +51,7 @@
   </form>
   <div id="signup">
     Don't have an account?
-    <a href="./signup.html" aria-label="signup button">
+    <a href="/register" aria-label="signup button">
       <button class="submit_bttn">Sign up</button>
     </a>
   </div>
